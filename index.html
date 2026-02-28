@@ -303,67 +303,13 @@
 
         <!-- Contact button for large screens -->
         <div class="d-none d-lg-flex align-items-center ms-3">
-          <a href="#" class="btn btn-outline-light tex-nowrap rounded-2 px-4 py-1">Contact Us</a>
+          <a href="#" class="btn btn-outline-light tex-nowrap rounded-2 px-4 py-1">Contact Us →</a>
         </div>
 
       </div>
     </nav>
 
-    <!-- SCROLL SCRIPT -->
-    <script>
-      window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.topbar');
-        const hero = document.querySelector('.hero-section');
-        const heroHeight = hero ? hero.offsetHeight : 0;
 
-        if (window.scrollY > heroHeight - 80) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
-    </script>
-
-    <!-- CUSTOM CSS -->
-    <style>
-      .topbar {
-        transition: all 0.4s ease;
-        background: transparent;
-      }
-
-      .topbar.scrolled {
-        background: #fff !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .topbar .nav-link {
-        color: #fff;
-        transition: color 0.4s ease;
-      }
-
-      .topbar.scrolled .nav-link {
-        color: #000;
-      }
-
-      .topbar .navbar-toggler-icon {
-        filter: invert(1);
-        transition: filter 0.4s ease;
-      }
-
-      .topbar.scrolled .navbar-toggler-icon {
-        filter: invert(0);
-      }
-
-      .mega-menu {
-        width: 100%;
-        padding: 1.5rem;
-        background: #000000;
-      }
-
-      .topbar.scrolled .mega-menu {
-        background: #f8f8f8;
-      }
-    </style>
     <!-- HERO content -->
     <div class="hero-content">
       <!-- HERO TEXT -->
@@ -386,15 +332,15 @@
     </p>
 
     <div class="row align-items-center">
-      <div class="col-md-6  py-4 mb-md-0 ">
+      <div class="col-md-4  py-4 mb-md-0 ">
         <img src="/assets/images/hero/hero-about.png" alt="About Us" class="img-fluid rounded">
       </div>
-      <div class="col-md-6 ">
+      <div class="col-md-8 ">
         <div class="position-relative">
           <div class="position-absolute start-0 top-0 bottom-0 bg-primary" style="width:4px; left:15px;">
           </div>
           <!-- Scrollable container -->
-          <div class="feature-scroll-container" style="max-height: 400px; overflow-y: auto; padding-right:10px;">
+          <div class="feature-scroll-container" style="max-height: 400px; overflow-y: auto; padding-right:0px;">
 
             <div class="d-flex mb-3 feature-item">
               <div class="flex-shrink-0 me-3">
@@ -461,6 +407,7 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <section class="p-5 text-white">
     <h2 class="mb-3 fw-semibold">Our Expertise</h2>
@@ -913,7 +860,7 @@
         <div class="swiper-slide">
           <div class="team-card text-center">
             <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
               <h6 class="mb-0 text-white">Jennifer</h6>
               <small class="text-white">CEO</small>
             </div>
@@ -925,7 +872,7 @@
         <div class="swiper-slide">
           <div class="team-card text-center">
             <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
               <h6 class="mb-0 text-white">Jennifer</h6>
               <small class="text-white">CEO</small>
             </div>
@@ -935,7 +882,7 @@
         <div class="swiper-slide">
           <div class="team-card text-center">
             <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
               <h6 class="mb-0 text-white">Jennifer</h6>
               <small class="text-white">CEO</small>
             </div>
@@ -945,7 +892,7 @@
         <div class="swiper-slide">
           <div class="team-card text-center">
             <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
               <h6 class="mb-0 text-white">Jennifer</h6>
               <small class="text-white">CEO</small>
             </div>
@@ -954,26 +901,7 @@
         <div class="swiper-slide">
           <div class="team-card text-center">
             <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
-              <h6 class="mb-0 text-white">Jennifer</h6>
-              <small class="text-white">CEO</small>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="team-card text-center">
-            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
-              <h6 class="mb-0 text-white">Jennifer</h6>
-              <small class="text-white">CEO</small>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="team-card text-center">
-            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
               <h6 class="mb-0 text-white">Jennifer</h6>
               <small class="text-white">CEO</small>
             </div>
@@ -983,7 +911,26 @@
         <div class="swiper-slide">
           <div class="team-card text-center">
             <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
-            <div class="card rounded-4 p-2 bg-dark">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card stat-card rounded-4 p-2 bg-dark">
               <h6 class="mb-0 text-white">Jennifer</h6>
               <small class="text-white">CEO</small>
             </div>
@@ -1057,19 +1004,23 @@
       </a>
     </div>
   </section>
-  <section class="p-5 mt-5 image-section ">
+<section class="image-section mt-5 p-5 d-flex align-items-center" style="max-height: 50px;">
+
     <div class="row">
-      <div class="col-lg-6">
-        <h2 class="fw-bold mb-3">From Idea to Impact
+      <div class="col-lg-6 text-white">
+        <h2 class="fw-bold">
+          From Idea to Impact
           We Build What Matters
         </h2>
+
         <a href="#" class="btn btn-outline-light px-4 rounded-2">
-          <span class="text-white">Contact Us</span>
-          <span class="text-primary">→</span>
+          <span>Contact Us</span>
+          <span class="ms-2">→</span>
         </a>
       </div>
     </div>
-  </section>
+
+</section>
   <section class="contact-section p-5">
     <div class="row align-items-center g-4">
       <h2 class="text-white fw-semibold">Contact Us</h2>
@@ -1230,18 +1181,24 @@
       text.textContent = item.getAttribute("data-text");
     }
   </script>
-  <script>
-    window.addEventListener('scroll', function () {
-      const navbar = document.querySelector('.topbar');
-      const heroHeight = document.querySelector('.hero-section').offsetHeight;
-
-      if (window.scrollY > heroHeight - 80) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
+<script>
+  // Enable hover for desktop only
+  document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+    dropdown.addEventListener('mouseenter', function () {
+      if (window.innerWidth > 991) {
+        this.classList.add('show');
+        this.querySelector('.mega-menu').classList.add('show');
       }
     });
-  </script>
+
+    dropdown.addEventListener('mouseleave', function () {
+      if (window.innerWidth > 991) {
+        this.classList.remove('show');
+        this.querySelector('.mega-menu').classList.remove('show');
+      }
+    });
+  });
+</script>
   <script>
     var swiper = new Swiper(".teamSwiper", {
       slidesPerView: 4,
@@ -1256,6 +1213,33 @@
         576: { slidesPerView: 2 },
         768: { slidesPerView: 3 },
         992: { slidesPerView: 4 }
+      }
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 1, // default mobile
+
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        },
+        1200: {
+          slidesPerView: 4, // Desktop pe 4 cards
+        }
       }
     });
   </script>
