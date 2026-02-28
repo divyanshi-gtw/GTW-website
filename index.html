@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/hero/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+</head>
+
+<body>
+  <section class="hero-section home-hero">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg topbar px-4 fixed-top">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/logo-gtw.png" alt="logo">
+        </a>
+
+        <!-- Hamburger toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarMenu"
+          aria-controls="topbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Menu -->
+        <div class="collapse navbar-collapse justify-content-center" id="topbarMenu">
+          <ul class="navbar-nav gap-4">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+
+            <!-- SERVICES MEGA MENU -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+              <div class="dropdown-menu mega-menu shadow">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="stat-card p-3 bg-dark">
+                      <h6 class="text-primary fw-bold fs-5 mb-3">Mobile Development</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Flutter App Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Android App Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">iOS App Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">React Native</a></li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Machine Learning</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Java Development</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="stat-card p-3 bg-dark">
+                      <h6 class="text-primary fw-bold fs-5 mb-3">Website Development</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Laravel Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">WordPress Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Shopify Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Python Web Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">React.js Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">PHP Development</a></li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">DOT NET Development</a>
+                        </li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">MERN Stack Development</a>
+                        </li>
+                        <li><a class="text-decoration-none text-white" href="#">Vue.js Development</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="stat-card p-3 bg-dark">
+                      <h6 class="text-primary fw-bold fs-5 mb-3">UI/UX Design</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Website Design</a></li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Application Design</a></li>
+                        <li><a class="text-decoration-none text-white" href="#">Responsive Design</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="stat-card p-3 bg-dark">
+                      <h6 class="text-primary fw-bold fs-5 mb-3">Digital Marketing</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">SEO</a></li>
+                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Social Media Marketing</a>
+                        </li>
+                        <li><a class="text-decoration-none text-white" href="#">Pay Per Click</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- INDUSTRIES MEGA MENU -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Industries</a>
+              <div class="dropdown-menu mega-menu shadow">
+                <div class="container">
+                  <!-- Row 1 -->
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img1.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Healthcare</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img2.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Food & Restaurant</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img3.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Travel</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img4.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Real Estate</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row 2 -->
+                  <div class="row mb-3">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img5.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Supply Chain</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img6.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Social Media Platform</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img7.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Fintech Applications</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img8.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">E-Commerce Solutions</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Row 3 -->
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img9.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Retails</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-3">
+                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                        <!-- Top: Image + Heading -->
+                        <div class="d-flex align-items-center ">
+                          <img src="/assets/images/topbar/img10.png" alt="Startups" height="25" class="me-2">
+                          <h6 class="mb-0 text-white">Tutors</h6>
+                        </div>
+
+                        <!-- Bottom: Description Text -->
+                        <p class="mb-0 text-light small">
+                          Innovative solutions for growing businesses in tech and services.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testimonial</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+
+            <!-- Contact button inside collapse for small screens -->
+            <li class="nav-item d-lg-none">
+              <a href="#" class="btn btn-outline-dark tex-nowrap rounded-2 px-4 py-1 w-100 text-center mt-2">Contact
+                Us</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Contact button for large screens -->
+        <div class="d-none d-lg-flex align-items-center ms-3">
+          <a href="#" class="btn btn-outline-light tex-nowrap rounded-2 px-4 py-1">Contact Us</a>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- SCROLL SCRIPT -->
+    <script>
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.topbar');
+        const hero = document.querySelector('.hero-section');
+        const heroHeight = hero ? hero.offsetHeight : 0;
+
+        if (window.scrollY > heroHeight - 80) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    </script>
+
+    <!-- CUSTOM CSS -->
+    <style>
+      .topbar {
+        transition: all 0.4s ease;
+        background: transparent;
+      }
+
+      .topbar.scrolled {
+        background: #fff !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .topbar .nav-link {
+        color: #fff;
+        transition: color 0.4s ease;
+      }
+
+      .topbar.scrolled .nav-link {
+        color: #000;
+      }
+
+      .topbar .navbar-toggler-icon {
+        filter: invert(1);
+        transition: filter 0.4s ease;
+      }
+
+      .topbar.scrolled .navbar-toggler-icon {
+        filter: invert(0);
+      }
+
+      .mega-menu {
+        width: 100%;
+        padding: 1.5rem;
+        background: #000000;
+      }
+
+      .topbar.scrolled .mega-menu {
+        background: #f8f8f8;
+      }
+    </style>
+    <!-- HERO content -->
+    <div class="hero-content">
+      <!-- HERO TEXT -->
+      <div class="hero-text py-5">
+        <h1>We Build <span class="text-primary">Digital </span> <br> Experiences</h1>
+        <p class="fs-4">Empowering businesses with innovative and <br> next-gen IT Solutions.</p>
+        <div>
+          <button class="btn btn-outline-light  px-4 rounded-2 ">Let Get Started <i
+              class="bi bi-arrow-right text-primary"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class=" bg-white p-5 rounded-5">
+    <h2 class="mb-3 fw-semibold text-dark">About Us</h2>
+    <p class="mb-4 fw-semibold text-dark">Increase operational efficiency, reduce costs, and drive productivity through
+      <br> custom-built digital
+      solutions. Our expert teams specialize in building.
+    </p>
+
+    <div class="row align-items-center">
+      <div class="col-md-6  py-4 mb-md-0 ">
+        <img src="/assets/images/hero/hero-about.png" alt="About Us" class="img-fluid rounded">
+      </div>
+      <div class="col-md-6 ">
+        <div class="position-relative">
+          <div class="position-absolute start-0 top-0 bottom-0 bg-primary" style="width:4px; left:15px;">
+          </div>
+          <!-- Scrollable container -->
+          <div class="feature-scroll-container" style="max-height: 400px; overflow-y: auto; padding-right:10px;">
+
+            <div class="d-flex mb-3 feature-item">
+              <div class="flex-shrink-0 me-3">
+                <div class="bg-white shadow-sm  rounded-circle d-flex align-items-center justify-content-center"
+                  style="width:60px; height:60px; z-index:1;margin-left: -24px; position:relative;">
+                  <img src="/assets/images/hero/hero-about-icon1.png" height="30" alt="">
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="text-primary">Custom Software Development</h4>
+                <p class="text-dark">We engineer bespoke software designed to solve your unique operational challenges.
+                  From automating internal workflows to building large-scale ERP systems, our solutions are built for
+                  high performance,
+                  reliability, and long-term scalability.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-4 feature-item">
+              <div class="flex-shrink-0 me-3">
+                <div class="bg-white shadow-sm  rounded-circle d-flex align-items-center justify-content-center"
+                  style="width:60px; height:60px; z-index:1;margin-left: -24px; position:relative;">
+                  <img src="/assets/images/hero/hero-about-icon2.png" height="30" alt="">
+                </div>
+              </div>
+              <div class="flex-grow-1 text-dark">
+                <h4>Full-Stack Web Engineering</h4>
+                <p>Moving beyond simple websites, we build progressive web applications (PWAs) and enterprise-grade
+                  portals.
+                  Using a modern stack (MERN/MEAN), we ensure your platform is lightning-fast, SEO-optimized, and
+                  capable
+                  of
+                  handling millions of requests.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-3 feature-item">
+              <div class="flex-shrink-0 me-3">
+                <div class="bg-white shadow-sm  rounded-circle d-flex align-items-center justify-content-center"
+                  style="width:60px; height:60px; z-index:1;margin-left: -24px; position:relative;">
+                  <img src="/assets/images/hero/hero-about-icon1.png" height="30" alt="">
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="text-dark">Custom Software Development</h4>
+                <p class="text-dark">We engineer bespoke software designed to solve your unique operational challenges.
+                  From automating
+                  internal workflows to building large-scale ERP systems, our solutions are built for high performance,
+                  reliability, and long-term scalability.</p>
+              </div>
+            </div>
+            <div class="d-flex mb-3 feature-item">
+              <div class="flex-shrink-0 me-3">
+                <div class="bg-white shadow-sm  rounded-circle d-flex align-items-center justify-content-center"
+                  style="width:60px; height:60px; z-index:1;margin-left: -24px; position:relative;">
+                  <img src="/assets/images/hero/hero-about-icon1.png" height="30" alt="">
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <h4 class="text-dark">Custom Software Development</h4>
+                <p class="text-dark">We engineer bespoke software designed to solve your unique operational challenges.
+                  From automating
+                  internal workflows to building large-scale ERP systems, our solutions are built for high performance,
+                  reliability, and long-term scalability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="p-5 text-white">
+    <h2 class="mb-3 fw-semibold">Our Expertise</h2>
+    <p class="mb-5">
+      We design and develop tailored digital solutions that streamline operations, <br>
+      optimize costs, and empower businesses to achieve peak performance
+    </p>
+    <div>
+
+
+      <div class="row g-4">
+        <!-- Left Column (Stats) -->
+        <div class="col-lg-3 col-md-12">
+          <div class="stat-card p-3 mb-3 rounded">
+            <h2 class="fw-bold">455+</h2>
+            <p class="mb-0">Web Development<br>Project</p>
+          </div>
+          <div class="stat-card p-3 mb-3 rounded">
+            <h2 class="fw-bold">200+</h2>
+            <p class="mb-0">App Development<br>Project</p>
+          </div>
+          <div class="stat-card p-3 rounded">
+            <h2 class="fw-bold">150+</h2>
+            <p class="mb-0">Digital Marketing</p>
+          </div>
+        </div>
+        <!-- Right Cards Grid -->
+        <div class="col-lg-9">
+          <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="service-card  py-4 px-4 rounded d-flex flex-column justify-content-between">
+                <div>
+                  <h4 class="fw-semibold">Web Development</h4>
+                  <p>
+                    Developing smart, secure, and future- <br> ready websites.
+                  </p>
+                </div>
+                <button class="btn btn-outline-light rounded-circle btn-sm align-self-start">→</button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="service-card  py-4 px-4 rounded d-flex flex-column justify-content-between">
+                <div>
+                  <h4 class="fw-semibold">App Development</h4>
+                  <p>
+                    Developing smart, secure, and future- <br> ready websites.
+                  </p>
+                </div>
+                <button class="btn btn-outline-light rounded-circle btn-sm align-self-start">→</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="service-card  py-4 px-4  rounded d-flex flex-column justify-content-between">
+                <div>
+                  <h4 class="fw-semibold">Digital Marketing</h4>
+                  <p>
+                    Developing smart, secure, and future- <br> ready websites.
+                  </p>
+                </div>
+                <button class="btn btn-outline-light rounded-circle btn-sm align-self-start">→</button>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="service-card   py-4 px-4 rounded d-flex flex-column justify-content-between">
+                <div>
+                  <h4 class="fw-semibold">AI / ML</h4>
+                  <p>
+                    Developing smart, secure, and future- <br> ready websites.
+                  </p>
+                </div>
+                <button class="btn btn-outline-light rounded-circle btn-sm align-self-start">→</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="p-5 bg-white rounded-5">
+    <div class="w-100  mx-auto text-dark">
+      <h2 class="text-gradient-gold ">Industries We Sereve</h2>
+      <p class=" mx-auto mb-5">
+        Enhance operational efficiency, minimize costs, and accelerate growth with intelligent, custom-built <br>
+        digital solutions powered by our expert development teams. </p>
+    </div>
+    <div class="">
+      <div class="row justify-content-between g-4">
+        <div
+          class="col-12 col-lg-2 d-flex flex-lg-column flex-row justify-content-between align-items-center explore-grid-col">
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+
+          </div>
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-2
+                  d-flex align-items-center justify-content-center">
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2
+                  d-flex flex-lg-column flex-row
+                   justify-content-between
+                  align-items-center gap-5">
+
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+          </div>
+
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2
+                  d-flex align-items-center justify-content-center">
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2
+                  d-flex flex-lg-column flex-row
+                   justify-content-between
+                  align-items-center gap-5">
+
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+          </div>
+
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-2
+                  d-flex align-items-center justify-content-center">
+          <div class="explors-card">
+            <img src="/assets/images/hero/healthcare 1.png">
+            <small>Healthcare</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="portfolio-section position-relative text-white p-5">
+
+    <h2 class="mb-3 fw-semibold">Our Portfolio</h2>
+    <p class="mb-5">Showcasing innovation, creativity, and results through impactful digital <br> solutions crafted for
+      real-world success.</p>
+
+    <div class="row position-relative">
+      <!-- Portfolio container -->
+      <div class="col-md-10">
+        <div class="portfolio-items-container"
+          style="max-height:350px; overflow-y:auto; scroll-snap-type: y mandatory; padding-right:20px;">
+
+          <!-- Portfolio Item 1 -->
+          <div class="card bg-dark p-3 text-white portfolio-item mb-5" style="scroll-snap-align: start;">
+            <div class="d-flex align-items-start">
+              <img src="/assets/images/hero/mind-reset.png" height="300px" alt="Mind Reset Website" class="me-3">
+              <div>
+                <h2 class="py-4 mt-3">01 <br> Mind Reset Website</h2>
+                <p class="fs-6">Smart Brain Academy empowers students and educators through a reliable online tutoring
+                  ecosystem. Smooth interactions, efficient bookings, improved outcomes.Smart Brain Academy empowers
+                  students and educators through a reliable online tutoring ecosystem. Smooth interactions, efficient
+                  bookings, improved outcomes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 1 -->
+          <div class="card bg-dark p-3 text-white portfolio-item mb-5" style="scroll-snap-align: start;">
+            <div class="d-flex align-items-start">
+              <img src="/assets/images/hero/mind-reset.png" height="300px" alt="Mind Reset Website" class="me-3">
+              <div>
+                <h2 class="py-4 mt-3">01 <br> Mind Reset Website</h2>
+                <p class="fs-6">Smart Brain Academy empowers students and educators through a reliable online tutoring
+                  ecosystem. Smooth interactions, efficient bookings, improved outcomes.Smart Brain Academy empowers
+                  students and educators through a reliable online tutoring ecosystem. Smooth interactions, efficient
+                  bookings, improved outcomes.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 1 -->
+          <div class="card bg-dark p-3 text-white portfolio-item mb-5" style="scroll-snap-align: start;">
+            <div class="d-flex align-items-start">
+              <img src="/assets/images/hero/mind-reset.png" height="300px" alt="Mind Reset Website" class="me-3">
+              <div>
+                <h2 class="py-4 mt-3">01 <br> Mind Reset Website</h2>
+                <p class="fs-6">Smart Brain Academy empowers students and educators through a reliable online tutoring
+                  ecosystem. Smooth interactions, efficient bookings, improved outcomes.Smart Brain Academy empowers
+                  students and educators through a reliable online tutoring ecosystem. Smooth interactions, efficient
+                  bookings, improved outcomes.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item 1 -->
+          <div class="card bg-dark p-3 text-white portfolio-item mb-5" style="scroll-snap-align: start;">
+            <div class="d-flex align-items-start">
+              <img src="/assets/images/hero/mind-reset.png" height="300px" alt="Mind Reset Website" class="me-3">
+              <div>
+                <h2 class="py-4 mt-3">01 <br> Mind Reset Website</h2>
+                <p class="fs-6">Smart Brain Academy empowers students and educators through a reliable online tutoring
+                  ecosystem. Smooth interactions, efficient bookings, improved outcomes.Smart Brain Academy empowers
+                  students and educators through a reliable online tutoring ecosystem. Smooth interactions, efficient
+                  bookings, improved outcomes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right vertical line with moving dot -->
+      <div class="col d-none d-md-block position-relative">
+        <div class="vertical-line position-absolute top-0 start-50 translate-middle-x"
+          style="width:4px; height:100%; background:#555;"></div>
+        <div class="dot position-absolute"
+          style="width:12px; height:12px; border-radius:50%; background:#fff; left:50%; transform:translateX(-50%); top:0;">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="image-scroll-row py-5 overflow-hidden">
+    <div class="d-flex gap-5 auto-scroll">
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech1.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech2.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech3.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech4.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech5.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech6.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech7.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech8.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech1.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech2.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech3.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech4.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech5.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech6.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech7.png" class="img-fluid" style="height:50px;">
+      </div>
+      <div class="flex-shrink-0 me-3">
+        <img src="/assets/images/icon/tech8.png" class="img-fluid" style="height:50px;">
+      </div>
+    </div>
+  </div>
+  <section class="p-5 bg-white  rounded-5">
+    <h2 class="fw-semibold text-dark mb-2">Testimonials</h2>
+    <p class="text-dark mb-5">
+      We take pride in building lasting partnerships through quality work, timely delivery, and transparent <br>
+      communication. Our client testimonials reflect the trust and satisfaction we strive to achieve in every project.
+    </p>
+
+    <div class="swiper mySwiper py-3">
+      <div class="swiper-wrapper">
+
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="testimonial-card p-4 rounded shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
+
+              <div class="text-warning fs-2">
+                ★★★★★
+              </div>
+            </div>
+            <p class="small text-dark">
+              Working with Gupta tech web has been an excellent experience from start to finish. they delivered a
+              clean, modern, and intuitive product for our booking platform. I really appreciate their patience and
+              understanding and look forward to working with them in the next phase. I highly recommend them to anyone
+              looking for a reliable, talented, and committed developer. </p>
+            <h5 class="fw-bold text-dark mb-0">Roy Donaldson</h5>
+            <small class="text-danger">Project : Book Luxor</small>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="testimonial-card p-4 rounded shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <img src="/assets/images/hero/client-img1.png" class="rounded-circle" width="70" height="70" alt="user">
+
+              <div class="text-warning fs-2">
+                ★★★★★
+              </div>
+            </div>
+            <p class="small text-dark">
+              "Excellent work by Gupta tech web! they did a fantastic job on our project from start to finish. Their
+              team quickly understood our requirements, communicated clearly throughout, and delivered everything on
+              time with great attention to detail. Their expertise and overall problem-solving made the entire process
+              smooth and efficient. We’re very happy with the results and would definitely work with her again in the
+              future. Highly recommended!" </p>
+            <h5 class="fw-bold  text-dark mb-0">Timir Rakay</h5>
+            <small class="text-danger">Project : Dinner Mile</small>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="testimonial-card p-4 rounded shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
+
+              <div class="text-warning fs-2">
+                ★★★★★
+              </div>
+            </div>
+            <p class="small text-dark">
+              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
+              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
+              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
+              tasks! </p>
+            <h5 class="fw-bold  text-dark mb-0">Christoph</h5>
+            <small class="text-danger">Project : PBD Firm Service Team App</small>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="testimonial-card p-4 rounded shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
+
+              <div class="text-warning fs-2">
+                ★★★★★
+              </div>
+            </div>
+            <p class="small text-dark">
+              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
+              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
+              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
+              tasks!
+            </p>
+            <h5 class="fw-bold  text-dark mb-0">Christoph</h5>
+            <small class="text-danger">Project : PBD Firm Service Team App</small>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="testimonial-card p-4 rounded shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
+
+              <div class="text-warning fs-2">
+                ★★★★★
+              </div>
+            </div>
+            <p class="small text-dark">
+              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
+              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
+              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
+              tasks! </p>
+            <h5 class="fw-bold  text-dark mb-0">Christoph</h5>
+            <small class="text-danger">Project : PBD Firm Service Team App</small>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="testimonial-card p-4 rounded shadow-sm">
+            <div class="d-flex align-items-center justify-content-between mb-1">
+              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
+
+              <div class="text-warning fs-2">
+                ★★★★★
+              </div>
+            </div>
+            <p class="small text-dark">
+              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
+              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
+              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
+              tasks! </p>
+            <h5 class="fw-bold text-dark  mb-0">Christoph</h5>
+            <small class="text-danger">Project : PBD Firm Service Team App</small>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="p-5 text-white">
+
+    <h2 class="fw-semibold mb-3">Our Teams</h2>
+    <p class="mb-4">
+      Showcasing innovation, creativity, and results through impactful digital solutions.
+    </p>
+
+    <div class="swiper teamSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Card -->
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Repeat Cards -->
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="team-card text-center">
+            <img src="/assets/images/hero/team-demo.png" class="img-fluid rounded mb-3" alt="">
+            <div class="card rounded-4 p-2 bg-dark">
+              <h6 class="mb-0 text-white">Jennifer</h6>
+              <small class="text-white">CEO</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="p-5 bg-white rounded-5">
+    <!-- Heading -->
+    <h2 class="fw-semibold text-dark mb-3">Blog</h2>
+    <p class="text-dark mb-5" style="max-width:650px;">
+      We take pride in building lasting partnerships through quality work, timely delivery,
+      and transparent communication. Our client testimonials reflect the trust and satisfaction
+      we strive to achieve in every project.
+    </p>
+    <!-- Blog Cards -->
+    <div class="row g-4">
+
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card h-100">
+          <img src="/assets/images/hero/blog-img1.png" class="img-fluid mb-3" alt="blog">
+
+          <span class="badge text-dark border rounded-4  mb-2">Inspiration</span>
+
+          <h6 class="fw-semibold text-dark">
+            8 Creative Ways to Repurpose Your Webinar Content
+          </h6>
+
+          <a href="#" class="text-danger text-decoration-none small">Read</a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card h-100">
+          <img src="/assets/images/hero/blog-img2.png" class="img-fluid mb-3" alt="blog">
+
+          <span class="badge text-dark border rounded-4 mb-2">Inspiration</span>
+
+          <h6 class="fw-semibold text-dark">
+            Why Webinars Are the #1 Lead Generation Marketing Strategy, You May Not Be Thinking About
+          </h6>
+
+          <a href="#" class="text-danger text-decoration-none small">Read</a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card h-100">
+          <img src="/assets/images/hero/blog-img3.png" class="img-fluid mb-3" alt="blog">
+
+          <span class="badge text-dark border rounded-4  mb-2">Inspiration</span>
+
+          <h6 class="fw-semibold text-dark">
+            How to Drive Qualified Pipeline and Enable Sales After Your Webinar Wraps
+          </h6>
+
+          <a href="#" class="text-danger text-decoration-none small">Read</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Center Button -->
+    <div class="text-center mt-5">
+      <a href="#" class="btn btn-outline-primary px-4 rounded-2">
+        <span class="text-dark">Read More</span> →
+      </a>
+    </div>
+  </section>
+  <section class="p-5 mt-5 image-section ">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-3">From Idea to Impact
+          We Build What Matters
+        </h2>
+        <a href="#" class="btn btn-outline-light px-4 rounded-2">
+          <span class="text-white">Contact Us</span>
+          <span class="text-primary">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section p-5">
+    <div class="row align-items-center g-4">
+      <h2 class="text-white fw-semibold">Contact Us</h2>
+      <p class="text-white">Connect with our team for expert guidance.</p>
+
+      <!-- Left Form Column -->
+      <div class="col-lg-6 col-md-6 ">
+        <div class="contact-form p-1 ">
+
+          <form>
+            <!-- Name -->
+            <div class="mb-4">
+              <input type="text" class="form-control rounded-2" placeholder="Full Name">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-4">
+              <input type="email" class="form-control rounded-2" placeholder="Email Address">
+            </div>
+
+            <!-- Phone -->
+            <div class="mb-4">
+              <input type="text" class="form-control rounded-2" placeholder="Phone Number">
+            </div>
+
+            <!-- Message -->
+            <div class="mb-4">
+              <textarea rows="5" class="form-control rounded-2" style="height: 100px !important;"
+                placeholder="Write your message"></textarea>
+            </div>
+            <!-- Center Button -->
+
+            <a href="#" class="btn btn-outline-light btn-sm px-4 py-2 text-white rounded-2">
+              <spa>Read More</span> →
+            </a>
+
+          </form>
+        </div>
+      </div>
+      <!-- Right Image Column -->
+      <div class="col-lg-6 col-md-6">
+        <div class="contact-image text-center text-lg-end">
+          <img src="/assets/images/hero/map.png" class="img-fluid " alt="Contact Image">
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer-section  text-light pt-5 pb-4">
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <!-- Logo and description -->
+        <div class="col-12 col-md-3">
+          <div class="mb-3">
+            <img src="/assets/images/logo-gtw.png" alt="GTW Logo" class="img-fluid">
+          </div>
+          <p class="footer-desc small">
+            Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard.
+          </p>
+          <div class="d-flex align-items-center mt-2">
+            <a href="#" class="text-light"><img src="/assets/images/icon/facebook.png" alt="Facebook" width="60"
+                height="60"></a>
+            <a href="#" class="text-light"><img src="/assets/images/icon/instagram.png" alt="Instagram" width="60"
+                height="60"></a>
+            <a href="#" class="text-light"><img src="/assets/images/icon/twitter.png" alt="Twitter" width="60"
+                height="60"></a>
+            <a href="#" class="text-light"><img src="/assets/images/icon/linkdin.png" alt="LinkedIn" width="60"
+                height="60"></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-6 col-sm-4 col-md-2">
+          <h6 class="footer-title text-uppercase mb-3">Quick Links</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Self-hosted</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">SaaS Hosting</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Platform</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Desktop App</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-6 col-sm-4 col-md-2">
+          <h6 class="footer-title text-uppercase mb-3">Services</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Product</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Developers</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Public API</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Docker</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div class="col-6 col-sm-4 col-md-2">
+          <h6 class="footer-title text-uppercase mb-3">Resources</h6>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Blog</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Merch Store</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Open Startup</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Embed</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Developers</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Routing Forms</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Workflows</a></li>
+            <li><a href="#" class="text-light text-decoration-none small d-block mb-1">App Store</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-12 col-md-3">
+          <h6 class="footer-title text-uppercase mb-3">Contact Us</h6>
+          <ul class="list-unstyled footer-contact small">
+            <li class="mb-2 d-flex align-items-start">
+              <img src="/assets/images/icon/location.png" alt="" class="me-2 mt-1" width="20">
+              <span>Plot No. 367 PU4 Scheme No. 54, Behind C21 Mall Indore - 452010 (M.P.)</span>
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <img src="/assets/images/icon/mail.png" alt="" class="me-2" width="20">
+              info@crazydigitalworlds.com
+            </li>
+            <li class="mb-2 d-flex align-items-center">
+              <img src="/assets/images/icon/call.png" alt="" class="me-2" width="20">
+              +91 9039 502 924
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+  <script src="/assets/js/swiper-custom.js"></script>
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/flatpickr-custome.js"> </script>
+  <script src="/assets/js/dropdown.js"></script>
+  <script>
+    const items = document.querySelectorAll(".workflow-left li");
+    const img = document.getElementById("workflowImg");
+    const text = document.getElementById("workflowText");
+
+    items.forEach(item => {
+
+      item.addEventListener("mouseenter", () => changeContent(item));
+
+      item.addEventListener("click", () => changeContent(item));
+    });
+
+    function changeContent(item) {
+      items.forEach(i => i.classList.remove("active"));
+      item.classList.add("active");
+
+      img.src = item.getAttribute("data-img");
+      text.textContent = item.getAttribute("data-text");
+    }
+  </script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.topbar');
+      const heroHeight = document.querySelector('.hero-section').offsetHeight;
+
+      if (window.scrollY > heroHeight - 80) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".teamSwiper", {
+      slidesPerView: 4,
+      spaceBetween: 25,
+      loop: true,
+      autoplay: {
+        delay: 500,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        576: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        992: { slidesPerView: 4 }
+      }
+    });
+  </script>
+</body>
+
+</html>

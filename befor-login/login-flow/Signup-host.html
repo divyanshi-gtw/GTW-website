@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="signup_page_title">BookLuxor Login</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+    <link rel="stylesheet" href="/assets/css/select2.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style> 
+        .form-card {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 14px;
+        }
+        .inline-msg {
+            display: inline-flex;
+            align-items: center;
+            background: #e7f3ff;
+            color: #084298;
+            border-radius: 20px;
+            padding: 6px 14px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(-6px);
+            transition: opacity 0.35s ease, transform 0.35s ease;
+        }
+        .inline-msg.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hidden {
+            display: none !important;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        .upload-tile {
+            cursor: pointer;
+        }
+        .upload-placeholder {
+            height: 120px;
+            border: 2px dashed #cfd4da;
+            border-radius: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .upload-placeholder i {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        .image-item {
+            position: relative;
+            height: 120px;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        .image-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .remove-image {
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            border: none;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 18px;
+            line-height: 1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="container py-5">
+        <h3 class="text-center fw-bold">Host Registration</h3>
+        <p class="text-center text-muted fw-bold mb-4">Sign in to manage your property</p>
+        <div class="shadow-sm py-3">
+            <div class="form-card">
+                <h5 class="section-title">Personal Details</h5>
+                <div class="row g-3">
+                    <div class="col-md-3">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" placeholder="Enter First Name">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Last Name</label>
+                        <input type="email" class="form-control" placeholder="Enter Last Name">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Contact Number</label>
+                        <input type="tel" class="form-control" placeholder="Mobile Number">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Email Address</label>
+                        <input type="email" class="form-control" placeholder="Email Address">
+                    </div>
+                </div>
+
+                <div class="mt-4 d-flex align-items-center flex-wrap gap-3">
+
+                    <label class="fw-semibold mb-0 me-3">Business Type</label>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hotelCheck">
+                        <label class="form-check-label" for="hotelCheck">Hotels</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="tourCheck">
+                        <label class="form-check-label" for="tourCheck">Tours</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="bothCheck">
+                        <label class="form-check-label" for="bothCheck">Both</label>
+                    </div>
+
+                    <span id="selectionMessage" class="inline-msg hidden">
+                        Please fill out the below form for property registration
+                    </span>
+
+                </div>
+            </div>
+            <div id="hotelForm" class="form-card hidden">
+                <hr>
+                <h5 class="section-title">Hotel Registration</h5>
+                <div class="hotel-image-upload mb-4">
+                    <label class="fw-bold mb-2 d-block">Hotel Images</label>
+                    <div class="image-grid" id="imageGrid">
+                        <label class="upload-tile">
+                            <input type="file" id="hotelImagesInput" multiple accept="image/*" hidden>
+                            <div class="upload-placeholder">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Add Images</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label>Hotel Name</label>
+                            <input type="text" class="form-control py-2" placeholder="Enter Hotel Name" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Hotel Type</label>
+                            <select class="select2-enable py-2" id="hotelType" required>
+                                <option value="">Select type</option>
+                                <option>Hotel</option>
+                                <option>Hostel</option>
+                                <option>Apartment</option>
+                                <option>Villa</option>
+                                <option>Home Stay</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Number of Rooms</label>
+                            <input type="number" class="form-control py-2" placeholder="Total Rooms" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Star Rating</label>
+                            <select class="select2-enable py-2">
+                                <option value="">Optional</option>
+                                <option>1 Star</option>
+                                <option>2 Star</option>
+                                <option>3 Star</option>
+                                <option>4 Star</option>
+                                <option>5 Star</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Check-In Time</label>
+                            <input type="time" class="form-control py-2" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Check-Out Time</label>
+                            <input type="time" class="form-control py-2" required>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <h5 class="fw-bold mb-3">About Hotel</h5>
+
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4"
+                            placeholder="Describe your hotel, services, ambience, nearby attractions..."
+                            required></textarea>
+                    </div>
+
+
+                    <h6 class="fw-bold mb-3">Amenities & Facilities</h6>
+
+                    <div class="d-flex flex-wrap align-items-center gap-5 amenities-row">
+
+                        <label class="amenity-item">
+                            <input class="form-check-input" type="checkbox" id="bothCheck" name="amenities[]"
+                                value="meals">
+                            <img src="/assets/images/icon/Breakfast.svg" class="mb-1" height="18">
+                            <span>Meals</span>
+                        </label>
+
+                        <label class="amenity-item">
+                            <input class="form-check-input" type="checkbox" id="bothCheck" name="amenities[]"
+                                value="accessibility">
+                            <img src="/assets/images/icon/wheelchahir.svg" class="mb-1" height="18">
+                            <span>Accessibility</span>
+                        </label>
+
+                        <label class="amenity-item">
+                            <input class="form-check-input" type="checkbox" id="bothCheck" name="amenities[]"
+                                value="transfer">
+                            <img src="/assets/images/icon/driving.svg" class="mb-1" height="18">
+                            <span>Transfer</span>
+                        </label>
+
+                        <label class="amenity-item">
+                            <input class="form-check-input" type="checkbox" id="bothCheck" name="amenities[]"
+                                value="wifi">
+                            <img src="/assets/images/icon/wifi.svg" class="mb-1" height="18">
+                            <span>WiFi</span>
+                        </label>
+
+                        <label class="amenity-item">
+                            <input class="form-check-input" type="checkbox" id="bothCheck" name="amenities[]"
+                                value="laundry">
+                            <img src="/assets/images/icon/laundry.svg" class="mb-1" height="18">
+                            <span>Laundry</span>
+                        </label>
+
+                        <label class="amenity-item">
+                            <input class="form-check-input" type="checkbox" id="bothCheck" name="amenities[]"
+                                value="hotel_service">
+                            <img src="/assets/images/icon/hotel service.svg" class="mb-1" height="18">
+                            <span>Hotel Service</span>
+                        </label>
+
+                        <label class="amenity-item">
+                            <input type="checkbox" name="amenities[]" value="pet">
+                            <img src="/assets/images/icon/pet.png" class="mb-1" height="18">
+                            <span>Pet</span>
+                        </label>
+
+                    </div>
+
+                    <hr>
+
+                    <h6 class="fw-bold mb-2">Other Facilities (Optional)</h6>
+                    <p class="text-muted small mb-3">
+                        Add any additional facilities not listed above
+                    </p>
+
+                    <div class="row g-3" id="customFacilities">
+
+                        <!-- First input -->
+                        <div class="col-12 col-md-4 col-lg-3 facility-item">
+                            <div class="position-relative">
+                                <input type="text" name="custom_facilities[]" class="form-control form-control-sm pe-4"
+                                    placeholder="e.g. Rooftop Café">
+
+                                <button type="button"
+                                    class="btn btn-sm btn-link text-danger p-0 position-absolute top-50 end-0 translate-middle-y me-2 remove-facility d-none">
+                                    ✕
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="button" class="btn btn-sm btn-outline-primary rounded-pill mt-3" id="addFacility">
+                        + Add another facility
+                    </button>
+
+                    <hr>
+
+                    <h5 class="fw-bold mb-3">Address & Location</h5>
+                    <div class="row g-3 mt-1">
+
+                        <div class="col-md-6">
+                            <label class="form-label">Complete Address</label>
+                            <input type="text" class="form-control editable" disabled id="address">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control editable" disabled id="city">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Country</label>
+                            <input type="text" class="form-control editable" disabled id="country">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">Latitude</label>
+                            <input type="text" class="form-control editable" disabled id="latitude">
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">Longitude</label>
+                            <input type="text" class="form-control editable" disabled id="longitude">
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <label class="form-label fw-semibold">Select Location on Map</label>
+                            <div id="map"></div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <h5 class="fw-bold mb-3">Document Verification</h5>
+
+                    <div class="row">
+
+                        <div class="col-md-4 mb-3">
+                            <label>Property Ownership Proof</label>
+                            <input type="file" class="form-control py-2" accept="image/*,.pdf" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Business License</label>
+                            <input type="file" class="form-control py-2" accept="image/*,.pdf" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Hotel Registration Certificate</label>
+                            <input type="file" class="form-control py-2" accept="image/*,.pdf" required>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>Fire Safety Certificate (Optional)</label>
+                            <input type="file" class="form-control py-2" accept="image/*,.pdf">
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label>VAT / Tax Registration Number</label>
+                            <input type="text" class="form-control py-2"
+                                placeholder="Enter VAT / Tax Registration Number">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div id="tourForm" class="form-card hidden">
+
+                <hr>
+                <div class="d-flex justify-content-between align-items-center flex-wrap mb-3">
+                    <h5 class="section-title mb-0">Tour Registration</h5>
+
+                    <button type="button" class="btn btn-outline-primary" id="addTourBtn">
+                        + Add Another Tour
+                    </button>
+                    <script>// Get references
+                        const addTourBtn = document.getElementById('addTourBtn');
+                        const tourForm = document.getElementById('tourForm');
+
+                        
+                        addTourBtn.addEventListener('click', () => {
+                          
+                            const newTourForm = tourForm.cloneNode(true); 
+                            newTourForm.id = '';
+                            newTourForm.classList.remove('hidden'); 
+
+                            tourForm.parentNode.appendChild(newTourForm);
+
+                            newTourForm.scrollIntoView({ behavior: 'smooth' });
+                        });
+
+                    </script>
+                </div>
+
+               
+                <div class="hotel-image-upload mb-4">
+                    <label class="fw-bold mb-2 d-block">Tours Images</label>
+                    <div class="image-grid" id="imageGrid">
+                        <label class="upload-tile">
+                            <input type="file" id="hotelImagesInput" multiple accept="image/*" hidden>
+                            <div class="upload-placeholder">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Add Images</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="section-title">Basic Tour Information</h5>
+
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <label>Tour Title</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label>Tour Category</label>
+                            <select class="select2-enable">
+                                <option>Sightseeing</option>
+                                <option>Cultural</option>
+                                <option>Adventure</option>
+                                <option>Historical</option>
+                                <option>Desert Safari</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label>Tour Type</label>
+                            <select class="select2-enable" id="tourType">
+                                <option value="shared">Shared Tour</option>
+                                <option value="private">Private Tour</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12">
+                            <label>Description</label>
+                            <textarea class="form-control" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3" id="locationSection">
+                    <h5 class="section-title">Location Details</h5>
+                    <div class="row g-3">
+                        <!-- Country (Fixed) -->
+                        <div class="col-md-4">
+                            <label>Country</label>
+                            <input class="form-control" value="Egypt (EG) +20">
+                            <input type="hidden" name="country_code" value="EG">
+                        </div>
+                        <div class="col-md-4">
+                            <label>City</label>
+                            <input class="form-control" placeholder="e.g. Luxor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mb-3">
+            <button class="btn btn-primary px-5 rounded-pill mt-3">
+                Submit for Approval
+            </button>
+        </div>
+        <p class="text-muted text-center">
+            <span data-translate="have_account">Alredy have an account?</span>
+            <a href="/befor-login/login-flow/login-host.html" class="text-decoration-none text-primary fw-bold"
+                data-translate="login">Login</a>
+        </p>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/select2/select2.min.js"></script>
+    <script src="/assets/js/select2/select-custom.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/lang.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const tourCheck = document.getElementById("tourCheck");
+            const hotelCheck = document.getElementById("hotelCheck");
+            const bothCheck = document.getElementById("bothCheck");
+
+            const tourForm = document.getElementById("tourForm");
+            const hotelForm = document.getElementById("hotelForm");
+
+            const messageBox = document.getElementById("selectionMessage");
+
+            function resetForm(container) {
+                const fields = container.querySelectorAll("input, select, textarea");
+                fields.forEach(field => {
+                    field.value = "";
+                    if (field.type === "checkbox" || field.type === "radio") {
+                        field.checked = false;
+                    }
+                });
+            }
+
+            function toggleForms() {
+
+                tourForm.classList.add("hidden");
+                hotelForm.classList.add("hidden");
+
+                if (bothCheck.checked) {
+                    tourCheck.checked = false;
+                    hotelCheck.checked = false;
+
+                    tourForm.classList.remove("hidden");
+                    hotelForm.classList.remove("hidden");
+
+                    messageBox.classList.remove("hidden");
+                    return;
+                }
+
+                if (hotelCheck.checked) {
+                    hotelForm.classList.remove("hidden");
+                    messageBox.classList.remove("hidden");
+                } else {
+                    hotelForm.classList.add("hidden");
+                    resetForm(hotelForm);
+                }
+
+                if (tourCheck.checked) {
+                    tourForm.classList.remove("hidden");
+                    messageBox.classList.remove("hidden");
+                } else {
+                    tourForm.classList.add("hidden");
+                    resetForm(tourForm);
+                }
+
+                if (!tourCheck.checked && !hotelCheck.checked && !bothCheck.checked) {
+                    messageBox.classList.add("hidden");
+                }
+            }
+
+            tourCheck.addEventListener("change", () => {
+                bothCheck.checked = false;
+                toggleForms();
+            });
+
+            hotelCheck.addEventListener("change", () => {
+                bothCheck.checked = false;
+                toggleForms();
+            });
+
+            bothCheck.addEventListener("change", toggleForms);
+
+        });
+        let msgTimer = null;
+
+        function showAnimatedMessage() {
+            const msg = document.getElementById("selectionMessage");
+
+            if (msgTimer) clearTimeout(msgTimer);
+
+            msg.classList.remove("hidden");
+
+            requestAnimationFrame(() => {
+                msg.classList.add("show");
+            });
+
+            msgTimer = setTimeout(() => {
+                msg.classList.remove("show");
+
+                setTimeout(() => {
+                    msg.classList.add("hidden");
+                }, 350);
+            }, 2200);
+        }
+
+        ["hotelCheck", "tourCheck", "bothCheck"].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.addEventListener("change", showAnimatedMessage);
+        });
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const pickupType = document.getElementById("pickupType");
+
+            const hotelPickupBox = document.getElementById("hotelPickupBox");
+            const pickupChargeBox = document.getElementById("pickupChargeBox");
+
+            const meetingPointBox = document.getElementById("meetingPointBox");
+            const mapLinkBox = document.getElementById("mapLinkBox");
+
+            const dropoffType = document.getElementById("dropoffType");
+            const dropoffBox = document.getElementById("dropoffBox");
+
+            pickupType.addEventListener("change", function () {
+
+                hotelPickupBox.classList.add("d-none");
+                pickupChargeBox.classList.add("d-none");
+                meetingPointBox.classList.add("d-none");
+                mapLinkBox.classList.add("d-none");
+
+                if (this.value === "hotel") {
+                    hotelPickupBox.classList.remove("d-none");
+                    pickupChargeBox.classList.remove("d-none");
+                }
+
+                if (this.value === "meeting") {
+                    meetingPointBox.classList.remove("d-none");
+                    mapLinkBox.classList.remove("d-none");
+                }
+            });
+
+            dropoffType.addEventListener("change", function () {
+                if (this.value === "different") {
+                    dropoffBox.classList.remove("d-none");
+                } else {
+                    dropoffBox.classList.add("d-none");
+                    dropoffBox.querySelector("input").value = "";
+                }
+            });
+
+        });
+
+    </script>
+    <script>
+        const input = document.getElementById("hotelImagesInput");
+        const grid = document.getElementById("imageGrid");
+
+        input.addEventListener("change", function () {
+            [...this.files].forEach(file => {
+                const reader = new FileReader();
+
+                reader.onload = function (e) {
+                    const div = document.createElement("div");
+                    div.classList.add("image-item");
+
+                    div.innerHTML = `
+                <img src="${e.target.result}">
+                <button type="button" class="remove-image">&times;</button>
+            `;
+
+                    div.querySelector(".remove-image").onclick = () => div.remove();
+                    grid.insertBefore(div, grid.lastElementChild);
+                };
+
+                reader.readAsDataURL(file);
+            });
+
+            input.value = "";
+        });
+    </script>
+    <script>
+        document.getElementById("addFacility").addEventListener("click", function () {
+            const container = document.getElementById("customFacilities");
+
+            const col = document.createElement("div");
+            col.className = "col-12 col-md-4 col-lg-3 facility-item";
+
+            col.innerHTML = `
+        <div class="position-relative">
+            <input type="text"
+                   name="custom_facilities[]"
+                   class="form-control form-control-sm pe-4"
+                   placeholder="Enter facility name">
+
+            <button type="button"
+                    class="btn btn-sm text-danger p-0 position-absolute top-50 end-0 translate-middle-y me-2 remove-facility">
+                ✕
+            </button>
+        </div>
+    `;
+
+            container.appendChild(col);
+        });
+
+        document.addEventListener("click", function (e) {
+            if (e.target.classList.contains("remove-facility")) {
+                e.target.closest(".facility-item").remove();
+            }
+        });
+    </script>
+<script>
+  var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap'
+  }).addTo(map);
+
+  var marker;
+
+  map.on('click', function(e) {
+    var lat = e.latlng.lat.toFixed(6);
+    var lng = e.latlng.lng.toFixed(6);
+
+    if (marker) {
+      map.removeLayer(marker);
+    }
+    marker = L.marker([lat, lng]).addTo(map);
+
+    document.getElementById("latitude").value = lat;
+    document.getElementById("longitude").value = lng;
+
+    fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}`)
+      .then(res => res.json())
+      .then(data => {
+        if (data.address) {
+          document.getElementById("city").value =
+            data.address.city ||
+            data.address.town ||
+            data.address.village ||
+            "";
+
+          document.getElementById("country").value =
+            data.address.country || "";
+
+          document.getElementById("address").value =
+            data.display_name || "";
+        }
+      });
+  });
+</script>
+</body>
+
+</html>

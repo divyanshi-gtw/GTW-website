@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="forgot_page_title">Forgot Password</title>
+  <link rel="icon" type="image/svg+xml" href="/assets/images/hero/favicon.svg">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+  <section class="login-section">
+    <!-- Left image section -->
+    <div class="left-section">
+      <img src="/assets/images/form/forget-pw.jpg" alt="hero">
+      <div class="text-overlay text-white text-center">
+        <h1 class="fw-bold">Restore Your Luxor
+          Access</h1>
+        <p class="mb-5 pb-5 fs-4">
+          Sign in to unlock exclusive stays and
+          unforgettable experiences.
+        </p>
+      </div>
+    </div>
+    <!-- Right Form Section -->
+    <div class="right-section">
+      <div class="form-wrapper">
+        <h3 class="fw-bold text-primary mb-2" data-translate="forgot_title">Forgot Password</h3>
+        <p class="text-muted mb-4" data-translate="forgot_subtitle">Please enter your registered email.</p>
+        <form>
+          <div class="mb-3 position-relative">
+            <input type="email" class="form-control py-2 p-5" data-translate="forgotpw-email_placeholder"
+              placeholder="Email address" required>
+            <i
+              class="fa-regular fa-envelope position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary"></i>
+          </div>
+          <button type="button" onclick="sendAndRedirect()" class="btn btn-primary w-100 py-2 rounded-pill">
+            Send
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- SUCCESS TOAST -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+    <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive"
+      aria-atomic="true" data-bs-delay="3000">
+
+      <div class="d-flex">
+        <div class="toast-body">
+          Mail Send
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast">
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+  <script>
+    function sendAndRedirect() {
+      const toastEl = document.getElementById('successToast');
+      const toast = new bootstrap.Toast(toastEl);
+      toast.show();
+
+      // 2 second baad OTP page
+      setTimeout(() => {
+        window.location.href = "otp.html";
+      }, 2000);
+    }
+  </script>
+
+  <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/js/lang.js"></script>
+</body>
+
+</html>

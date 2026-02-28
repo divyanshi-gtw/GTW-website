@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/hero/favicon.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+</head>
+
+<body>
+    <section class="login-section ">
+        <!-- Left Image Section -->
+        <div class="left-section">
+            <img src="/assets/images/form/chnge-pw.jpg" alt="hero">
+            <div class="text-overlay text-white text-center">
+                <h1 class="fw-bold">Restore Your Luxor
+                    Access
+                </h1>
+                <p class="mb-5 pb-5 fs-4">
+                    Sign in to unlock exclusive stays and
+                    unforgettable experiences.
+                </p>
+            </div>
+        </div>
+        <!-- Right Form Section -->
+        <div class="right-section">
+            <div class="form-wrapper">
+                <h3 class="fw-bold text-primary mb-2">Create Password</h3>
+                <p class="text-muted mb-4">Please enter your details to access your account.</p>
+                <form>
+                    <!-- Password -->
+                    <div class="mb-3 position-relative">
+                        <input class="form-control py-2 ps-5 pe-5 password-field" data-translate="password_placeholder"
+                            placeholder="Password" required>
+                        <i
+                            class="fa-solid fa-lock position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary"></i>
+                        <i
+                            class="fa-solid fa-eye-slash position-absolute top-50 end-0 translate-middle-y pe-3 text-secondary toggle-password"></i>
+                    </div>
+                    <!-- Re-enter Password -->
+                    <div class="mb-3 position-relative">
+                        <input class="form-control py-2 ps-5 pe-5 password-field" data-translate="password_placeholder"
+                            placeholder="Confirm Password" required>
+                        <i
+                            class="fa-solid fa-lock position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary"></i>
+                        <i
+                            class="fa-solid fa-eye-slash position-absolute top-50 end-0 translate-middle-y pe-3 text-secondary toggle-password"></i>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="button" onclick="sendAndRedirect()"
+                            class="btn btn-primary w-100 rounded-pill py-2">
+                            Create
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- SUCCESS TOAST -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+        <div id="successToast" class="toast align-items-center text-bg-success border-0" role="alert"
+            aria-live="assertive" aria-atomic="true" data-bs-delay="3000">
+
+            <div class="d-flex">
+                <div class="toast-body">
+                    Password changed successfully
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast">
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        function sendAndRedirect() {
+            const toastEl = document.getElementById('successToast');
+            const toast = new bootstrap.Toast(toastEl);
+            toast.show();
+
+            setTimeout(() => {
+                window.location.href = "login.html";
+            }, 2000);
+        }
+    </script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/form.js"></script>
+</body>
+
+</html>
