@@ -1,32 +1,30 @@
 body {
   background-color: #1c1c1c;
 } /* ================= NAVBAR GLASS EFFECT ================= */
+/* Glass Blur Navbar */
 .topbar {
-  backdrop-filter: blur(6px);
-  background: rgba(0, 0, 0, 0.55);
-  transition: 0.3s ease;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.6);
+  transition: .3s;
 }
 
-.nav-link {
+.nav-link-topbar {
   color: #fff !important;
   font-weight: 500;
-  transition: 0.3s;
 }
-
 .nav-link:hover {
   color: #B30D29 !important;
 }
 
-/* ================= MEGA MENU ================= */
+/* Mega Menu */
 .mega-menu {
   width: 100%;
   left: 0;
   right: 0;
-  top: 100%;
   border: none;
-  border-radius: 0;
-  padding: 30px 40px;
-  background: #000;
+  border-radius: 12px;
+  padding: 25px;
+  background: #111;
   display: none;
 }
 
@@ -34,70 +32,38 @@ body {
   display: block;
 }
 
-
-/* Dropdown links */
-.mega-menu a {
-  font-size: 14px;
-  transition: 0.2s;
-}
-
-.mega-menu a:hover {
-  color: #B30D29 !important;
-}
-
-/* ================= CONTACT BUTTON ================= */
-.btn-outline-light {
-  border: 1px solid rgba(255,255,255,0.5);
-}
-
-.btn-outline-light:hover {
-  background: #B30D29;
-  border-color: #B30D29;
-}
-
-/* ================= MOBILE FIX ================= */
-@media (max-width: 991px) {
-  .mega-menu {
-    position: static;
-    display: none;
-    padding: 20px 0;
-  }
-
-  .dropdown.show .mega-menu {
-    display: block;
-  }
-
-  .navbar-collapse {
-    background: #000;
-    padding: 20px;
-    margin-top: 10px;
-  }
-}
-.dropdown-menu {
-  border: none;
-}/* Default Bootstrap arrow remove */
-.navbar .dropdown-toggle::after {
-  display: none;
-}
-
-/* Custom arrow image */
+/* Custom Arrow */
+.navbar .dropdown-toggle::after { display: none; }
 .navbar .dropdown-toggle {
   position: relative;
-  padding-right: 22px;
+  padding-right: 20px;
 }
-
 .navbar .dropdown-toggle::before {
   content: "";
   position: absolute;
-  right: 0;
-  margin-right: -10px;
+  right: -10px;
   top: 50%;
   transform: translateY(-50%);
-  width: 10px;
-  height: 10px;
-  background-image: url('/assets/images/arrow-down.png'); /* apni arrow image path */
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  background: url('/assets/images/arrow-down.png') no-repeat center/contain;
+}
+
+/* Mobile Fix */
+@media (max-width:991px){
+  #topbarMenu{
+    max-height:80vh;
+    overflow-y:auto;
+    background:#000;
+    padding:20px;
+  }
+
+  .mega-menu{
+    position:static !important;
+    max-height:60vh;
+    overflow-y:auto;
+    margin-top:10px;
+  }
 }
 .home-hero {
   background: url(/assets/images/hero/bg-gif.gif) center/cover no-repeat;
@@ -152,26 +118,24 @@ body {
 .stat-card:hover h2 {
   color: #ff2b2b; /* red heading on hover */
 }
-.swiper-slide {
-  height: auto;
-  display: flex;
+.myTestimonialSwiper {
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.testimonial-card {
-  background: #fff;
-  border-radius: 16px;
+.myTestimonialSwiper .swiper-slide {
+  transform: scale(0.85);
+
   transition: all 0.4s ease;
-  transform: scale(0.9);
-
-
-  /* equal height magic */
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  min-height: 260px; /* adjust as needed */
+  justify-content: center;
 }
 
+.myTestimonialSwiper .swiper-slide-active {
+  transform: scale(1.05);
+
+  z-index: 2;
+}
 .team-card img {
   border-radius: 16px;
   height: 220px;
@@ -266,50 +230,6 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   position: relative;
   height: 100%;
-}
-
-.top-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.avatar {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.stars {
-  color: #ffb400;
-  font-size: 18px;
-  letter-spacing: 2px;
-}
-
-.testimonial-card p {
-  font-size: 14px;
-  color: #555;
-  min-height: 110px;
-}
-
-.testimonial-card h6 {
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-/* Auto Scroll CSS */
-.auto-scroll {
-  display: flex;
-  animation: scroll-left 10s linear infinite;
 }
 
 @keyframes scroll-left {

@@ -34,127 +34,235 @@
 
 <body>
     <section class="hero-section contact-bg">
-        <nav class="navbar navbar-expand-lg topbar px-5">
-            <!-- Logo -->
-            <a class="navbar-brand" href="/index.html">
-                <img src="/assets/images/logo-gtw.png" class="logo-img" alt="BookLuxor">
-            </a>
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Toggle Content -->
-            <div class="collapse navbar-collapse justify-content-end" id="topbarMenu">
-                <ul class="navbar-nav jus align-items-start gap-3">
-                    <!-- Buttons -->
-                    <li class="nav-item">
-                        <a href="/befor-login/login-flow/login.html"
-                            class="btn btn-outline-light rounded-2 px-4 py-1 w-100">Contact
-                            us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+   <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg topbar px-4 fixed-top">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img src="/assets/images/logo-gtw.png" alt="logo">
+        </a>
+
+        <!-- Hamburger -->
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#topbarMenu">
+          ☰
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse justify-content-center" id="topbarMenu">
+          <ul class="navbar-nav gap-lg-4 gap-2">
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/about/about.html">About Us</a>
+            </li>
+
+            <!-- SERVICES -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link text-white dropdown-toggle" href="#">Services</a>
+              <div class="dropdown-menu mega-menu shadow">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">Mobile Development</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Flutter App</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Android App</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">iOS App</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">React Native</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">Website Development</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Laravel</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">WordPress</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">React.js</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">MERN Stack</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">UI/UX Design</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Website Design</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">App Design</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">Responsive Design</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 mb-3">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">Digital Marketing</h6>
+                      <ul class="list-unstyled">
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">SEO</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Social Media</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">PPC</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <!-- INDUSTRIES -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link text-white dropdown-toggle" href="#">Industries</a>
+              <div class="dropdown-menu mega-menu shadow">
+                <div class="row g-3">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">Healthcare</h6>
+                      <small class="text-light">Innovative solutions for healthcare.</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">Travel</h6>
+                      <small class="text-light">Smart travel tech solutions.</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">Fintech</h6>
+                      <small class="text-light">Secure financial applications.</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">E-Commerce</h6>
+                      <small class="text-light">Scalable ecommerce platforms.</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link  text-white" href="/protfolio/protfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link  text-white" href="/testnomial/testnomial.html">Testimonial</a></li>
+            <li class="nav-item"><a class="nav-link  text-white" href="/blog/blog.html">Blogs</a></li>
+
+            <!-- Mobile Contact -->
+            <li class="nav-item d-lg-none mt-2">
+              <a href="/contact/contact-us.html" class="btn btn-outline-primary active w-100">Contact Us</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Desktop Contact -->
+        <div class="d-none d-lg-flex ms-3">
+          <a href="/contact/contact-us.html" class="btn btn-outline-primary active rounded-2 px-4">Contact Us →</a>
+        </div>
+
+      </div>
+    </nav>
+
         <!-- HERO content -->
         <div class="hero-content ">
             <!-- HERO TEXT -->
             <div class="text-center text-white">
-                <h1 class="fw-bold">Contact Us</h1>
+                <h1 class="fw-bold mt-4">Contact Us</h1>
                 <p class="fs-4 pb-5">Transform Your Ideas into Impactful Solutions</p>
             </div>
         </div>
     </section>
+    <section class="contact-section bg-white rounded-5 p-4 p-lg-5">
+        <div class="mb-4">
+            <h3 class="fw-bold text-dark">
+                Let's Build the <span class="text-primary">Future Together!</span><br>
+                Connect With Us
+            </h3>
+            <p class="text-dark fw-semibold fs-6 mt-2">
+                Connect with our team for expert guidance.
+            </p>
+            <div class="mt-4">
 
-    <section class="contact-section bg-white rounded-5 p-5">
-        <div class="row align-items-center g-4">
-            <h3 class=" fw-bold text-dark mb-0">Let's Build the <span class="text-primary">Future Together!</span> <br>
-                Connect With Us</h3>
-            <p class="text-dark fw-semibold fs-5 mt-2 ">Connect with our team for expert guidance.</p>
-            <div class="row  g-3 text-dark mt-0">
-
-                <!-- Row 1: Email -->
-                <div class="col-12 d-flex align-items-center">
-                    <img src="/assets/images/icon/mail.png" alt="Email" class="me-3">
-                    <div>
-                        <h6 class="mb-0 fw-bold">Sales@guptatechweb.com</h6>
-                    </div>
+                <div class="d-flex align-items-center mb-3">
+                    <img src="/assets/images/icon/mail.png" alt="Email" height="20"  class="me-3">
+                    <h6 class="mb-0 fw-bold">Sales@guptatechweb.com</h6>
                 </div>
 
-                <!-- Row 2: Address -->
-                <div class="col-12 d-flex align-items-center">
-                    <img src="/assets/images/icon/location.png" alt="Address" class="me-3">
-                    <div>
-                        <h6 class="mb-0 fw-bold">410 Shagun Tower , Vijay Nage , Indore (M.P)</h6>
-                    </div>
+                <div class="d-flex align-items-center mb-3">
+                    <img src="/assets/images/icon/location.png" alt="Address" height="20"   class="me-3">
+                    <h6 class="mb-0 fw-bold">
+                        410 Shagun Tower, Vijay Nagar, Indore (M.P)
+                    </h6>
                 </div>
 
-                <!-- Row 3: Phone -->
-                <div class="col-12 d-flex align-items-center">
-                    <img src="/assets/images/icon/call.png" alt="Phone" class="me-3">
-                    <div>
-                        <h6 class="mb-0 fw-bold">+91 7400554294</h6>
-                    </div>
+                <div class="d-flex align-items-center">
+                    <img src="/assets/images/icon/call.png" alt="Phone" height="20" class="me-3">
+                    <h6 class="mb-0 fw-bold">+91 7400554294</h6>
                 </div>
 
             </div>
-            <!-- Left Form Column -->
-            <div class="col-lg-4 col-md-4 ">
-                <div class=" p-1  ">
-                    <form>
-                        <!-- Name -->
-                        <div class="d-flex gap-4">
-                            <div class="mb-4">
-                                <input type="text" class="form-control rounded-2" placeholder="First Name">
-                            </div>
-                            <div class="mb-4">
-                                <input type="text" class="form-control rounded-2" placeholder="Last Name">
-                            </div>
-                        </div>
-                        <!-- Email -->
-                        <div class="mb-4">
-                            <input type="email" class="form-control rounded-2" placeholder="Email Address">
-                        </div>
-
-                        <!-- Phone -->
-                        <div class="mb-4">
-                            <input type="text" class="form-control rounded-2" placeholder="Phone Number">
-                        </div>
-                        <!-- Phone -->
-                        <div class="mb-4">
-                            <input type="text" class="form-control rounded-2" placeholder="Service">
-                        </div> <!-- Phone -->
-                        <div class="mb-4">
-                            <input type="text" class="form-control rounded-2" placeholder="Country">
-                        </div>
-                        <!-- Message -->
-                        <div class="mb-4">
-                            <textarea rows="5" class="form-control rounded-2" style="height: 100px !important;"
-                                placeholder="Write your message"></textarea>
-                        </div>
-                        <!-- Center Button -->
-
-                        <div class="d-flex justify-content-center"> <a href="#"
-                                class="btn btn-outline-primary px-4 py-2 rounded-2">
-                                Send Message
-                            </a></div>
+        </div>
+        <div class="row align-items-center g-5">
 
 
-                    </form>
-                </div>
+            <!-- FORM COLUMN -->
+            <div class="col-md-6">
+                <form>
+
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <input type="text" class="form-control rounded-2" placeholder="First Name">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control rounded-2" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="mt-3">
+                        <input type="email" class="form-control rounded-2" placeholder="Email Address">
+                    </div>
+
+                    <div class="mt-3">
+                        <input type="text" class="form-control rounded-2" placeholder="Phone Number">
+                    </div>
+
+                    <div class="mt-3">
+                        <input type="text" class="form-control rounded-2" placeholder="Service">
+                    </div>
+
+                    <div class="mt-3">
+                        <input type="text" class="form-control rounded-2" placeholder="Country">
+                    </div>
+
+                    <div class="mt-3">
+                        <textarea rows="4" class="form-control rounded-2" placeholder="Write your message"></textarea>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button type="submit" class="btn btn-outline-primary px-4 py-2 rounded-2">
+                            Send Message
+                        </button>
+                    </div>
+
+                </form>
             </div>
-            <!-- Right Image Column -->
-            <div class="col-lg-8 col-md-8">
-                <div class="contact-image text-center text-lg-end">
-                    <img src="/assets/images/hero/map.png" class="img-fluid " alt="Contact Image">
-                </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-md-6 text-center">
+                <img src="/assets/images/hero/map.png" class="img-fluid" alt="Map">
             </div>
 
         </div>
+        </div>
     </section>
     <!-- Footer -->
-    <footer class="footer-section  text-light pt-5 pb-4">
-        <div class="container">
-
+    <footer class="footer-section  text-light p-5">
+ 
             <div class="row gy-4">
 
                 <div class="col-12 col-md-3">
@@ -229,8 +337,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
+  </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -240,55 +347,7 @@
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/flatpickr-custome.js"> </script>
     <script src="/assets/js/dropdown.js"></script>
-    <script>
-        const items = document.querySelectorAll(".workflow-left li");
-        const img = document.getElementById("workflowImg");
-        const text = document.getElementById("workflowText");
 
-        items.forEach(item => {
-
-            item.addEventListener("mouseenter", () => changeContent(item));
-
-            item.addEventListener("click", () => changeContent(item));
-        });
-
-        function changeContent(item) {
-            items.forEach(i => i.classList.remove("active"));
-            item.classList.add("active");
-
-            img.src = item.getAttribute("data-img");
-            text.textContent = item.getAttribute("data-text");
-        }
-    </script>
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.topbar');
-            const heroHeight = document.querySelector('.hero-section').offsetHeight;
-
-            if (window.scrollY > heroHeight - 80) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".teamSwiper", {
-            slidesPerView: 4,
-            spaceBetween: 25,
-            loop: true,
-            autoplay: {
-                delay: 500,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                0: { slidesPerView: 1 },
-                576: { slidesPerView: 2 },
-                768: { slidesPerView: 3 },
-                992: { slidesPerView: 4 }
-            }
-        });
-    </script>
 </body>
 
 </html>

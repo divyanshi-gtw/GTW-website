@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <section class="hero-section home-hero">
+  <section class="hero-section">
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg topbar px-4 fixed-top">
       <div class="container-fluid d-flex align-items-center justify-content-between">
@@ -25,86 +25,71 @@
           <img src="/assets/images/logo-gtw.png" alt="logo">
         </a>
 
-        <!-- Hamburger toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarMenu"
-          aria-controls="topbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <!-- Hamburger -->
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#topbarMenu">
+          ☰
         </button>
 
-        <!-- Collapsible Menu -->
+        <!-- Menu -->
         <div class="collapse navbar-collapse justify-content-center" id="topbarMenu">
-          <ul class="navbar-nav gap-4">
+          <ul class="navbar-nav gap-lg-4 gap-2">
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link text-white" href="#">Home</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link text-white" href="/about/about.html">About Us</a>
             </li>
 
-            <!-- SERVICES MEGA MENU -->
+            <!-- SERVICES -->
             <li class="nav-item dropdown position-static">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
+              <a class="nav-link text-white dropdown-toggle" href="#">Services</a>
               <div class="dropdown-menu mega-menu shadow">
                 <div class="row">
                   <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="stat-card p-3 bg-dark">
-                      <h6 class="text-primary fw-bold fs-5 mb-3">Mobile Development</h6>
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">Mobile Development</h6>
                       <ul class="list-unstyled">
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Flutter App Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Android App Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">iOS App Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">React Native</a></li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Machine Learning</a></li>
-                        <li><a class="text-decoration-none text-white" href="#">Java Development</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Flutter App</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Android App</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">iOS App</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">React Native</a></li>
                       </ul>
                     </div>
                   </div>
+
                   <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="stat-card p-3 bg-dark">
-                      <h6 class="text-primary fw-bold fs-5 mb-3">Website Development</h6>
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">Website Development</h6>
                       <ul class="list-unstyled">
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Laravel Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">WordPress Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Shopify Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Python Web Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">React.js Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">PHP Development</a></li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">DOT NET Development</a>
-                        </li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">MERN Stack Development</a>
-                        </li>
-                        <li><a class="text-decoration-none text-white" href="#">Vue.js Development</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Laravel</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">WordPress</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">React.js</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">MERN Stack</a></li>
                       </ul>
                     </div>
                   </div>
+
                   <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="stat-card p-3 bg-dark">
-                      <h6 class="text-primary fw-bold fs-5 mb-3">UI/UX Design</h6>
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">UI/UX Design</h6>
                       <ul class="list-unstyled">
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Website Design</a></li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Application Design</a></li>
-                        <li><a class="text-decoration-none text-white" href="#">Responsive Design</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Website Design</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">App Design</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">Responsive Design</a></li>
                       </ul>
                     </div>
                   </div>
+
                   <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="stat-card p-3 bg-dark">
-                      <h6 class="text-primary fw-bold fs-5 mb-3">Digital Marketing</h6>
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-primary fw-bold mb-3">Digital Marketing</h6>
                       <ul class="list-unstyled">
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">SEO</a></li>
-                        <li class="mb-3"><a class="text-decoration-none text-white" href="#">Social Media Marketing</a>
-                        </li>
-                        <li><a class="text-decoration-none text-white" href="#">Pay Per Click</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">SEO</a></li>
+                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Social Media</a></li>
+                        <li><a class="text-white text-decoration-none" href="#">PPC</a></li>
                       </ul>
                     </div>
                   </div>
@@ -112,209 +97,65 @@
               </div>
             </li>
 
-            <!-- INDUSTRIES MEGA MENU -->
+            <!-- INDUSTRIES -->
             <li class="nav-item dropdown position-static">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Industries</a>
+              <a class="nav-link  text-white dropdown-toggle" href="#">Industries</a>
               <div class="dropdown-menu mega-menu shadow">
-                <div class="container">
-                  <!-- Row 1 -->
-                  <div class="row mb-3">
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img1.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Healthcare</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img2.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Food & Restaurant</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img3.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Travel</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img4.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Real Estate</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
+                <div class="row g-3">
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">Healthcare</h6>
+                      <small class="text-light">Innovative solutions for healthcare.</small>
                     </div>
                   </div>
-                  <!-- Row 2 -->
-                  <div class="row mb-3">
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img5.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Supply Chain</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img6.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Social Media Platform</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img7.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Fintech Applications</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img8.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">E-Commerce Solutions</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">Travel</h6>
+                      <small class="text-light">Smart travel tech solutions.</small>
                     </div>
                   </div>
-                  <!-- Row 3 -->
-                  <div class="row">
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img9.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Retails</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">Fintech</h6>
+                      <small class="text-light">Secure financial applications.</small>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-3">
-                      <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
-
-                        <!-- Top: Image + Heading -->
-                        <div class="d-flex align-items-center ">
-                          <img src="/assets/images/topbar/img10.png" alt="Startups" height="25" class="me-2">
-                          <h6 class="mb-0 text-white">Tutors</h6>
-                        </div>
-
-                        <!-- Bottom: Description Text -->
-                        <p class="mb-0 text-light small">
-                          Innovative solutions for growing businesses in tech and services.
-                        </p>
-                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="p-3 bg-dark rounded-3">
+                      <h6 class="text-white mb-1">E-Commerce</h6>
+                      <small class="text-light">Scalable ecommerce platforms.</small>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
+            <li class="nav-item"><a class="nav-link  text-white" href="/protfolio/protfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link  text-white" href="/testnomial/testnomial.html">Testimonial</a></li>
+            <li class="nav-item"><a class="nav-link  text-white" href="/blog/blog.html">Blogs</a></li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonial</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
-            </li>
-
-            <!-- Contact button inside collapse for small screens -->
-            <li class="nav-item d-lg-none">
-              <a href="#" class="btn btn-outline-dark tex-nowrap rounded-2 px-4 py-1 w-100 text-center mt-2">Contact
-                Us</a>
+            <!-- Mobile Contact -->
+            <li class="nav-item d-lg-none mt-2">
+              <a href="/contact/contact-us.html" class="btn btn-outline-primary w-100">Contact Us</a>
             </li>
 
           </ul>
         </div>
 
-        <!-- Contact button for large screens -->
-        <div class="d-none d-lg-flex align-items-center ms-3">
-          <a href="#" class="btn btn-outline-light tex-nowrap rounded-2 px-4 py-1">Contact Us →</a>
+        <!-- Desktop Contact -->
+        <div class="d-none d-lg-flex ms-3">
+          <a href="/contact/contact-us.html" class="btn btn-outline-primary rounded-2 px-4">Contact Us →</a>
         </div>
 
       </div>
     </nav>
 
-
     <!-- HERO content -->
-    <div class="hero-content">
+    <div class="hero-content p-5 d-flex align-items-center w-100 text-white"
+      style="background: url('/assets/images/hero/bg-gif.gif') center/cover no-repeat; min-height: 550px; ">
       <!-- HERO TEXT -->
       <div class="hero-text py-5">
-        <h1>We Build <span class="text-primary">Digital </span> <br> Experiences</h1>
+        <h1 class="mt-5">We Build <span class="text-primary">Digital </span> <br> Experiences</h1>
         <p class="fs-4">Empowering businesses with innovative and <br> next-gen IT Solutions.</p>
         <div>
           <button class="btn btn-outline-light  px-4 rounded-2 ">Let Get Started <i
@@ -579,90 +420,90 @@
       </div>
     </div>
   </section>
-<section class="portfolio-section position-relative text-white py-5 px-3 px-lg-5">
+  <section class="portfolio-section position-relative text-white py-5 px-3 px-lg-5">
 
-  <div class="container-fluid">
-    <h2 class="mb-3 fw-semibold">Our Portfolio</h2>
-    <p class="mb-5">
-      Showcasing innovation, creativity, and results through impactful digital <br class="d-none d-md-block">
-      solutions crafted for real-world success.
-    </p>
+    <div class="container-fluid">
+      <h2 class="mb-3 fw-semibold">Our Portfolio</h2>
+      <p class="mb-5">
+        Showcasing innovation, creativity, and results through impactful digital <br class="d-none d-md-block">
+        solutions crafted for real-world success.
+      </p>
 
-    <div class="row position-relative">
-      
-      <!-- Portfolio container -->
-      <div class="col-lg-10">
-        <div class="portfolio-items-container pe-lg-4">
+      <div class="row position-relative">
 
-          <!-- Item -->
-          <div class="card bg-dark p-3 text-white portfolio-item mb-4">
-            <div class="row align-items-center g-3">
-              
-              <!-- Image -->
-              <div class="col-md-5">
-                <img src="/assets/images/hero/mind-reset.png" alt="Mind Reset Website"
-                  class="img-fluid rounded w-100 portfolio-img">
-              </div>
+        <!-- Portfolio container -->
+        <div class="col-lg-10">
+          <div class="portfolio-items-container pe-lg-4">
 
-              <!-- Content -->
-              <div class="col-md-7">
-                <h2 class="mt-2 mt-md-0">01 <br> Mind Reset Website</h2>
-                <p class="fs-6">
-                  Smart Brain Academy empowers students and educators through a reliable online tutoring ecosystem.
-                  Smooth interactions, efficient bookings, improved outcomes.
-                </p>
-              </div>
+            <!-- Item -->
+            <div class="card bg-dark p-3 text-white portfolio-item mb-4">
+              <div class="row align-items-center g-3">
 
-            </div>
-          </div>
+                <!-- Image -->
+                <div class="col-md-5">
+                  <img src="/assets/images/hero/mind-reset.png" alt="Mind Reset Website"
+                    class="img-fluid rounded w-100 portfolio-img">
+                </div>
 
-          <!-- Repeat Item -->
-          <div class="card bg-dark p-3 text-white portfolio-item mb-4">
-            <div class="row align-items-center g-3">
-              <div class="col-md-5">
-                <img src="/assets/images/hero/mind-reset.png" alt="Mind Reset Website"
-                  class="img-fluid rounded w-100 portfolio-img">
-              </div>
-              <div class="col-md-7">
-                <h2>02 <br> Mind Reset Website</h2>
-                <p class="fs-6">
-                  Smart Brain Academy empowers students and educators through a reliable online tutoring ecosystem.
-                  Smooth interactions, efficient bookings, improved outcomes.
-                </p>
+                <!-- Content -->
+                <div class="col-md-7">
+                  <h2 class="mt-2 mt-md-0">01 <br> Mind Reset Website</h2>
+                  <p class="fs-6">
+                    Smart Brain Academy empowers students and educators through a reliable online tutoring ecosystem.
+                    Smooth interactions, efficient bookings, improved outcomes.
+                  </p>
+                </div>
+
               </div>
             </div>
-          </div>
 
-          <!-- Repeat Item -->
-          <div class="card bg-dark p-3 text-white portfolio-item mb-4">
-            <div class="row align-items-center g-3">
-              <div class="col-md-5">
-                <img src="/assets/images/hero/mind-reset.png" alt="Mind Reset Website"
-                  class="img-fluid rounded w-100 portfolio-img">
-              </div>
-              <div class="col-md-7">
-                <h2>03 <br> Mind Reset Website</h2>
-                <p class="fs-6">
-                  Smart Brain Academy empowers students and educators through a reliable online tutoring ecosystem.
-                  Smooth interactions, efficient bookings, improved outcomes.
-                </p>
+            <!-- Repeat Item -->
+            <div class="card bg-dark p-3 text-white portfolio-item mb-4">
+              <div class="row align-items-center g-3">
+                <div class="col-md-5">
+                  <img src="/assets/images/hero/mind-reset.png" alt="Mind Reset Website"
+                    class="img-fluid rounded w-100 portfolio-img">
+                </div>
+                <div class="col-md-7">
+                  <h2>02 <br> Mind Reset Website</h2>
+                  <p class="fs-6">
+                    Smart Brain Academy empowers students and educators through a reliable online tutoring ecosystem.
+                    Smooth interactions, efficient bookings, improved outcomes.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
+            <!-- Repeat Item -->
+            <div class="card bg-dark p-3 text-white portfolio-item mb-4">
+              <div class="row align-items-center g-3">
+                <div class="col-md-5">
+                  <img src="/assets/images/hero/mind-reset.png" alt="Mind Reset Website"
+                    class="img-fluid rounded w-100 portfolio-img">
+                </div>
+                <div class="col-md-7">
+                  <h2>03 <br> Mind Reset Website</h2>
+                  <p class="fs-6">
+                    Smart Brain Academy empowers students and educators through a reliable online tutoring ecosystem.
+                    Smooth interactions, efficient bookings, improved outcomes.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
 
-      <!-- Right vertical line with moving dot (desktop only) -->
-      <div class="col-lg-2 d-none d-lg-block position-relative">
-        <div class="vertical-line position-absolute top-0 start-50 translate-middle-x"></div>
-        <div class="dot position-absolute start-50 translate-middle-x"></div>
-      </div>
+        <!-- Right vertical line with moving dot (desktop only) -->
+        <div class="col-lg-2 d-none d-lg-block position-relative">
+          <div class="vertical-line position-absolute top-0 start-50 translate-middle-x"></div>
+          <div class="dot position-absolute start-50 translate-middle-x"></div>
+        </div>
 
+      </div>
     </div>
-  </div>
 
-</section>
+  </section>
   <div class="image-scroll-row py-5 overflow-hidden">
     <div class="d-flex gap-5 auto-scroll">
       <div class="flex-shrink-0 me-3">
@@ -722,128 +563,99 @@
       communication. Our client testimonials reflect the trust and satisfaction we strive to achieve in every project.
     </p>
 
-    <div class="swiper mySwiper py-3">
+    <div class="swiper mySwiper py-1">
       <div class="swiper-wrapper">
 
-        <!-- Card -->
-        <div class="swiper-slide">
-          <div class="testimonial-card p-4 rounded shadow-sm">
-            <div class="d-flex align-items-center justify-content-between mb-1">
-              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
+        <div class="swiper myTestimonialSwiper">
+          <div class="swiper-wrapper">
 
-              <div class="text-warning fs-2">
-                ★★★★★
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
+                <div class="position-absolute" style="top:-45px; left:30px;">
+                  <img src="/assets/images/hero/client-img1.png" class="rounded-circle"
+                    style="width:75px; height:75px; object-fit:cover;" alt="user">
+                </div>
+                 <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
+                  ★★★★★
+                </div>
+                <p class="text-muted  my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium nemo
+                  perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
+                  Voluptate esse eveniet quisquam! </p>
+
+                <h5 class="fw-bold mb-1">Roy Donaldson</h5>
+                <p class="mb-0 small">
+                  <span class="text-muted">Project :</span>
+                  <span class="text-danger fw-semibold">Book Luxor</span>
+                </p>
               </div>
             </div>
-            <p class="small text-dark">
-              Working with Gupta tech web has been an excellent experience from start to finish. they delivered a
-              clean, modern, and intuitive product for our booking platform. I really appreciate their patience and
-              understanding and look forward to working with them in the next phase. I highly recommend them to anyone
-              looking for a reliable, talented, and committed developer. </p>
-            <h5 class="fw-bold text-dark mb-0">Roy Donaldson</h5>
-            <small class="text-danger">Project : Book Luxor</small>
-          </div>
-        </div>
 
-        <!-- Card -->
-        <div class="swiper-slide">
-          <div class="testimonial-card p-4 rounded shadow-sm">
-            <div class="d-flex align-items-center justify-content-between mb-1">
-              <img src="/assets/images/hero/client-img1.png" class="rounded-circle" width="70" height="70" alt="user">
+            <!-- Duplicate slides -->
+            <div class="swiper-slide">
+              <div class="testimonial-card border border-1 rounded-4 p-4 position-relative" style="max-width:600px;">
+                <div class="position-absolute" style="top:-45px; left:30px;">
+                  <img src="/assets/images/hero/client-img3.png" class="rounded-circle"
+                    style="width:75px; height:75px; object-fit:cover;" alt="user">
+                </div>
+                <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
+                  ★★★★★
+                </div>
+                <p class="text-muted  my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium nemo
+                  perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
+                  Voluptate esse eveniet quisquam! </p>
 
-              <div class="text-warning fs-2">
-                ★★★★★
+                <h5 class="fw-bold mb-1">Roy Donaldson</h5>
+                <p class="mb-0 small">
+                  <span class="text-muted">Project :</span>
+                  <span class="text-danger fw-semibold">Book Luxor</span>
+                </p>
               </div>
             </div>
-            <p class="small text-dark">
-              "Excellent work by Gupta tech web! they did a fantastic job on our project from start to finish. Their
-              team quickly understood our requirements, communicated clearly throughout, and delivered everything on
-              time with great attention to detail. Their expertise and overall problem-solving made the entire process
-              smooth and efficient. We’re very happy with the results and would definitely work with her again in the
-              future. Highly recommended!" </p>
-            <h5 class="fw-bold  text-dark mb-0">Timir Rakay</h5>
-            <small class="text-danger">Project : Dinner Mile</small>
-          </div>
-        </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card border border-1 rounded-4 p-4 position-relative" style="max-width:600px;">
+                <div class="position-absolute" style="top:-45px; left:30px;">
+                  <img src="/assets/images/hero/client-img2.png" class="rounded-circle"
+                    style="width:75px; height:75px; object-fit:cover;" alt="user">
+                </div>
+                 <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
+                  ★★★★★
+                </div>
+                <p class="text-muted  my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium nemo
+                  perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
+                  Voluptate esse eveniet quisquam! </p>
 
-        <!-- Card -->
-        <div class="swiper-slide">
-          <div class="testimonial-card p-4 rounded shadow-sm">
-            <div class="d-flex align-items-center justify-content-between mb-1">
-              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
-
-              <div class="text-warning fs-2">
-                ★★★★★
+                <h5 class="fw-bold mb-1">Roy Donaldson</h5>
+                <p class="mb-0 small">
+                  <span class="text-muted">Project :</span>
+                  <span class="text-danger fw-semibold">Book Luxor</span>
+                </p>
               </div>
             </div>
-            <p class="small text-dark">
-              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
-              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
-              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
-              tasks! </p>
-            <h5 class="fw-bold  text-dark mb-0">Christoph</h5>
-            <small class="text-danger">Project : PBD Firm Service Team App</small>
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="swiper-slide">
-          <div class="testimonial-card p-4 rounded shadow-sm">
-            <div class="d-flex align-items-center justify-content-between mb-1">
-              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
-
-              <div class="text-warning fs-2">
-                ★★★★★
+            <div class="swiper-slide">
+              <div class="testimonial-card border-1 border rounded-4 p-4 position-relative" style="max-width:600px;">
+                <div class="position-absolute" style="top:-45px; left:30px;">
+                  <img src="/assets/images/hero/client-img1.png" class="rounded-circle "
+                    style="width:75px; height:75px; object-fit:cover;" alt="user">
+                </div>
+            <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
+                  ★★★★★
+                </div>
+                <p class="text-muted  my-5">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium nemo
+                  perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
+                  Voluptate esse eveniet quisquam! </p>
+                <h5 class="fw-bold mb-1">Roy Donaldson</h5>
+                <p class="mb-0 small">
+                  <span class="text-muted">Project :</span>
+                  <span class="text-danger fw-semibold">Book Luxor</span>
+                </p>
               </div>
             </div>
-            <p class="small text-dark">
-              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
-              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
-              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
-              tasks!
-            </p>
-            <h5 class="fw-bold  text-dark mb-0">Christoph</h5>
-            <small class="text-danger">Project : PBD Firm Service Team App</small>
-          </div>
-        </div>
 
-        <!-- Card -->
-        <div class="swiper-slide">
-          <div class="testimonial-card p-4 rounded shadow-sm">
-            <div class="d-flex align-items-center justify-content-between mb-1">
-              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
-
-              <div class="text-warning fs-2">
-                ★★★★★
-              </div>
-            </div>
-            <p class="small text-dark">
-              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
-              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
-              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
-              tasks! </p>
-            <h5 class="fw-bold  text-dark mb-0">Christoph</h5>
-            <small class="text-danger">Project : PBD Firm Service Team App</small>
-          </div>
-        </div>
-
-        <!-- Card -->
-        <div class="swiper-slide">
-          <div class="testimonial-card p-4 rounded shadow-sm">
-            <div class="d-flex align-items-center justify-content-between mb-1">
-              <img src="/assets/images/hero/client-img2.png" class="rounded-circle" width="70" height="70" alt="user">
-
-              <div class="text-warning fs-2">
-                ★★★★★
-              </div>
-            </div>
-            <p class="small text-dark">
-              I recently worked with Gupta tech web for an SEO audit, and they delivered a clear, actionable report
-              covering technical SEO issues, keyword insights, and performance gaps. Their communication was prompt,
-              and they showed a strong understanding of SEO best practices. Highly recommended for any SEO-related
-              tasks! </p>
-            <h5 class="fw-bold text-dark  mb-0">Christoph</h5>
-            <small class="text-danger">Project : PBD Firm Service Team App</small>
           </div>
         </div>
 
@@ -1003,12 +815,15 @@
     </div>
     <!-- Center Button -->
     <div class="text-center mt-5">
-      <a href="#" class="btn btn-outline-primary px-4 rounded-2">
+      <a href="/blog/blog.html" class="btn btn-outline-primary px-4 rounded-2">
         <span class="text-dark">Read More</span> →
       </a>
     </div>
   </section>
-<section class="image-section mt-5 p-5 d-flex align-items-center" style="max-height: 50px;">
+  <section class="image-section mt-5 p-5 d-flex align-items-center"
+    style="background: url('/assets/images/hero/bottom.png') center/cover no-repeat; max-height: 50px; padding: 80px 0;">
+
+    <!-- HERO content -->
 
     <div class="row">
       <div class="col-lg-6 text-white">
@@ -1024,7 +839,7 @@
       </div>
     </div>
 
-</section>
+  </section>
   <section class="contact-section p-5">
     <div class="row align-items-center g-4">
       <h2 class="text-white fw-semibold">Contact Us</h2>
@@ -1074,8 +889,8 @@
     </div>
   </section>
   <!-- Footer -->
-  <footer class="footer-section  text-light pt-5 pb-4">
-    <div class="container">
+  <footer class="footer-section  text-light p-5">
+    <div class="">
 
       <div class="row gy-4">
 
@@ -1185,24 +1000,24 @@
       text.textContent = item.getAttribute("data-text");
     }
   </script>
-<script>
-  // Enable hover for desktop only
-  document.querySelectorAll('.dropdown').forEach(function (dropdown) {
-    dropdown.addEventListener('mouseenter', function () {
-      if (window.innerWidth > 991) {
-        this.classList.add('show');
-        this.querySelector('.mega-menu').classList.add('show');
-      }
-    });
+  <script>
+    // Enable hover for desktop only
+    document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+      dropdown.addEventListener('mouseenter', function () {
+        if (window.innerWidth > 991) {
+          this.classList.add('show');
+          this.querySelector('.mega-menu').classList.add('show');
+        }
+      });
 
-    dropdown.addEventListener('mouseleave', function () {
-      if (window.innerWidth > 991) {
-        this.classList.remove('show');
-        this.querySelector('.mega-menu').classList.remove('show');
-      }
+      dropdown.addEventListener('mouseleave', function () {
+        if (window.innerWidth > 991) {
+          this.classList.remove('show');
+          this.querySelector('.mega-menu').classList.remove('show');
+        }
+      });
     });
-  });
-</script>
+  </script>
   <script>
     var swiper = new Swiper(".teamSwiper", {
       slidesPerView: 4,
@@ -1220,33 +1035,24 @@
       }
     });
   </script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      loop: true,
-      spaceBetween: 20,
-      slidesPerView: 1, // default mobile
-
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-
-      breakpoints: {
-        576: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        992: {
-          slidesPerView: 3,
-        },
-        1200: {
-          slidesPerView: 4, // Desktop pe 4 cards
-        }
-      }
-    });
-  </script>
+<script>
+var swiper = new Swiper(".myTestimonialSwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  speed: 3000, // smooth continuous speed
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1200: { slidesPerView: 3 }
+  }
+});
+</script>
 </body>
 
 </html>
