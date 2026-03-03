@@ -15,141 +15,286 @@
 </head>
 
 <body>
-  <section class="hero-section">
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg topbar px-4 fixed-top">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg topbar px-4 fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
 
-        <!-- Logo -->
-        <a class="navbar-brand" href="#">
-          <img src="/assets/images/logo-gtw.png" alt="logo">
-        </a>
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="/assets/images/logo-gtw.png" alt="logo">
+      </a>
 
-        <!-- Hamburger -->
-        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
-          data-bs-target="#topbarMenu">
-          ☰
-        </button>
+      <!-- Hamburger -->
+      <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#topbarMenu">
+        ☰
+      </button>
 
-        <!-- Menu -->
-        <div class="collapse navbar-collapse justify-content-center" id="topbarMenu">
-          <ul class="navbar-nav gap-lg-4 gap-2">
+      <!-- Menu -->
+      <div class="collapse navbar-collapse justify-content-center" id="topbarMenu">
+        <ul class="navbar-nav gap-lg-4 gap-2">
 
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Home</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link top-link active text-primary" href="#">Home</a>
+          </li>
 
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/about/about.html">About Us</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link top-link text-white" href="/about/about.html">About Us</a>
+          </li>
 
-            <!-- SERVICES -->
-            <li class="nav-item dropdown position-static">
-              <a class="nav-link text-white dropdown-toggle" href="#">Services</a>
-              <div class="dropdown-menu mega-menu shadow">
-                <div class="row">
-                  <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-primary fw-bold mb-3">Mobile Development</h6>
-                      <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Flutter App</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Android App</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">iOS App</a></li>
-                        <li><a class="text-white text-decoration-none" href="#">React Native</a></li>
-                      </ul>
-                    </div>
+          <!-- SERVICES -->
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link top-link text-white dropdown-toggle" href="#">Services</a>
+            <div class="dropdown-menu mega-menu shadow">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="p-3 stat-card rounded-3">
+                    <h6 class="text-primary fw-bold mb-3">Mobile Development</h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Flutter App Development</a>
+                      </li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Android App Development</a>
+                      </li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">iOS App Development</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">React Native</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Machine Learning</a></li>
+                      <li><a class="text-decoration-none text-white" href="#">Java Development</a></li>
+                    </ul>
                   </div>
+                </div>
 
-                  <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-primary fw-bold mb-3">Website Development</h6>
-                      <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Laravel</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">WordPress</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">React.js</a></li>
-                        <li><a class="text-white text-decoration-none" href="#">MERN Stack</a></li>
-                      </ul>
-                    </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="p-3 stat-card rounded-3">
+                    <h6 class="text-primary fw-bold mb-3">Website Development</h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Laravel Development</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">WordPress Development</a>
+                      </li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Shopify Development</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Python Web Development</a>
+                      </li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">React.js Development</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">PHP Development</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">DOT NET Development</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">MERN Stack Development</a>
+                      </li>
+                      <li><a class="text-decoration-none text-white" href="#">Vue.js Development</a></li>
+                    </ul>
                   </div>
+                </div>
 
-                  <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-primary fw-bold mb-3">UI/UX Design</h6>
-                      <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Website Design</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">App Design</a></li>
-                        <li><a class="text-white text-decoration-none" href="#">Responsive Design</a></li>
-                      </ul>
-                    </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="p-3 stat-card rounded-3">
+                    <h6 class="text-primary fw-bold mb-3">UI/UX Design</h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Website Design</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Application Design</a></li>
+                      <li><a class="text-decoration-none text-white" href="#">Responsive Design</a></li>
+                    </ul>
                   </div>
+                </div>
 
-                  <div class="col-lg-3 col-md-6 mb-3">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-primary fw-bold mb-3">Digital Marketing</h6>
-                      <ul class="list-unstyled">
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">SEO</a></li>
-                        <li class="mb-2"><a class="text-white text-decoration-none" href="#">Social Media</a></li>
-                        <li><a class="text-white text-decoration-none" href="#">PPC</a></li>
-                      </ul>
-                    </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="p-3 stat-card rounded-3">
+                    <h6 class="text-primary fw-bold mb-3">Digital Marketing</h6>
+                    <ul class="list-unstyled">
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">SEO</a></li>
+                      <li class="mb-3"><a class="text-decoration-none text-white" href="#">Social Media Marketing</a>
+                      </li>
+                      <li><a class="text-decoration-none text-white" href="#">Pay Per Click</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <!-- INDUSTRIES -->
-            <li class="nav-item dropdown position-static">
-              <a class="nav-link  text-white dropdown-toggle" href="#">Industries</a>
-              <div class="dropdown-menu mega-menu shadow">
-                <div class="row g-3">
-                  <div class="col-lg-3 col-md-6">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-white mb-1">Healthcare</h6>
-                      <small class="text-light">Innovative solutions for healthcare.</small>
+          <!-- INDUSTRIES -->
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link top-link text-white dropdown-toggle" href="#">Industries</a>
+            <div class="dropdown-menu mega-menu shadow">
+              <!-- row 1 -->
+              <div class="row mb-3">
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img1.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Healthcare</h6>
                     </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
                   </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-white mb-1">Travel</h6>
-                      <small class="text-light">Smart travel tech solutions.</small>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img2.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Food & Restaurant</h6>
                     </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
                   </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-white mb-1">Fintech</h6>
-                      <small class="text-light">Secure financial applications.</small>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img3.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Travel</h6>
                     </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
                   </div>
-                  <div class="col-lg-3 col-md-6">
-                    <div class="p-3 bg-dark rounded-3">
-                      <h6 class="text-white mb-1">E-Commerce</h6>
-                      <small class="text-light">Scalable ecommerce platforms.</small>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img4.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Real Estate</h6>
                     </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
                   </div>
                 </div>
               </div>
-            </li>
+              <!-- Row 2 -->
+              <div class="row mb-3">
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
 
-            <li class="nav-item"><a class="nav-link  text-white" href="/protfolio/protfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link  text-white" href="/testnomial/testnomial.html">Testimonial</a></li>
-            <li class="nav-item"><a class="nav-link  text-white" href="/blog/blog.html">Blogs</a></li>
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img5.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Supply Chain</h6>
+                    </div>
 
-            <!-- Mobile Contact -->
-            <li class="nav-item d-lg-none mt-2">
-              <a href="/contact/contact-us.html" class="btn btn-outline-primary w-100">Contact Us</a>
-            </li>
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
 
-          </ul>
-        </div>
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img6.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Social Media Platform</h6>
+                    </div>
 
-        <!-- Desktop Contact -->
-        <div class="d-none d-lg-flex ms-3">
-          <a href="/contact/contact-us.html" class="btn btn-outline-primary rounded-2 px-4">Contact Us →</a>
-        </div>
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
 
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img7.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Fintech Applications</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img8.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">E-Commerce Solutions</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Row 3 -->
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img9.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Retails</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img10.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Tutors</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link top-link text-white" href="/protfolio/protfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link top-link text-white" href="/testnomial/testnomial.html">Testimonial</a></li>
+          <li class="nav-item"><a class="nav-link top-link text-white" href="/blog/blog.html">Blogs</a></li>
+
+          <!-- Mobile Contact -->
+          <li class="nav-item d-lg-none mt-2">
+            <a href="/contact/contact-us.html" class="btn btn-outline-primary w-100">Contact Us</a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
 
+      <!-- Desktop Contact -->
+      <div class="d-none d-lg-flex ms-3">
+        <a href="/contact/contact-us.html" class="btn btn-outline-primary rounded-2 px-4">Contact Us →</a>
+      </div>
+
+    </div>
+  </nav>
+  <section class="hero-section">
     <!-- HERO content -->
     <div class="hero-content p-5 d-flex align-items-center w-100 text-white"
       style="background: url('/assets/images/hero/bg-gif.gif') center/cover no-repeat; min-height: 550px; ">
@@ -281,7 +426,8 @@
 
             <!-- Card 1 -->
             <div class="col-lg-6 col-md-6 col-12">
-              <div class="service-card  py-4 px-4 rounded d-flex flex-column justify-content-between">
+              <div class="service-card  py-4 px-4 rounded d-flex flex-column justify-content-between"
+                style="background: url(/assets/images/hero/card-bg.png);">
                 <div>
                   <h4 class="fw-semibold">Web Development</h4>
                   <p>
@@ -294,7 +440,8 @@
 
             <!-- Card 2 -->
             <div class="col-lg-6 col-md-6 col-12">
-              <div class="service-card  py-4 px-4 rounded d-flex flex-column justify-content-between">
+              <div class="service-card  py-4 px-4 rounded d-flex flex-column justify-content-between"
+                style="background: url(/assets/images/hero/card-bg.png);">
                 <div>
                   <h4 class="fw-semibold">App Development</h4>
                   <p>
@@ -307,7 +454,8 @@
 
             <!-- Card 3 -->
             <div class="col-lg-6 col-md-6 col-12">
-              <div class="service-card  py-4 px-4  rounded d-flex flex-column justify-content-between">
+              <div class="service-card  py-4 px-4  rounded d-flex flex-column justify-content-between"
+                style="background: url(/assets/images/hero/card-bg.png);">
                 <div>
                   <h4 class="fw-semibold">Digital Marketing</h4>
                   <p>
@@ -320,7 +468,8 @@
 
             <!-- Card 4 -->
             <div class="col-lg-6 col-md-6 col-12">
-              <div class="service-card   py-4 px-4 rounded d-flex flex-column justify-content-between">
+              <div class="service-card py-4 px-4 rounded d-flex flex-column justify-content-between"
+                style="background: url(/assets/images/hero/card-bg.png);">
                 <div>
                   <h4 class="fw-semibold">AI / ML</h4>
                   <p>
@@ -576,7 +725,7 @@
                   <img src="/assets/images/hero/client-img1.png" class="rounded-circle"
                     style="width:75px; height:75px; object-fit:cover;" alt="user">
                 </div>
-                 <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
+                <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
                   ★★★★★
                 </div>
                 <p class="text-muted  my-5">
@@ -620,7 +769,7 @@
                   <img src="/assets/images/hero/client-img2.png" class="rounded-circle"
                     style="width:75px; height:75px; object-fit:cover;" alt="user">
                 </div>
-                 <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
+                <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
                   ★★★★★
                 </div>
                 <p class="text-muted  my-5">
@@ -641,7 +790,7 @@
                   <img src="/assets/images/hero/client-img1.png" class="rounded-circle "
                     style="width:75px; height:75px; object-fit:cover;" alt="user">
                 </div>
-            <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
+                <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
                   ★★★★★
                 </div>
                 <p class="text-muted  my-5">
@@ -786,32 +935,24 @@
       <div class="col-lg-4 col-md-6">
         <div class="blog-card h-100">
           <img src="/assets/images/hero/blog-img2.png" class="img-fluid mb-3" alt="blog">
-
           <span class="badge text-dark border rounded-4 mb-2">Inspiration</span>
-
           <h6 class="fw-semibold text-dark">
             Why Webinars Are the #1 Lead Generation Marketing Strategy, You May Not Be Thinking About
           </h6>
-
           <a href="#" class="text-danger text-decoration-none small">Read</a>
         </div>
       </div>
-
       <!-- Card 3 -->
       <div class="col-lg-4 col-md-6">
         <div class="blog-card h-100">
           <img src="/assets/images/hero/blog-img3.png" class="img-fluid mb-3" alt="blog">
-
           <span class="badge text-dark border rounded-4  mb-2">Inspiration</span>
-
           <h6 class="fw-semibold text-dark">
             How to Drive Qualified Pipeline and Enable Sales After Your Webinar Wraps
           </h6>
-
           <a href="#" class="text-danger text-decoration-none small">Read</a>
         </div>
       </div>
-
     </div>
     <!-- Center Button -->
     <div class="text-center mt-5">
@@ -822,9 +963,7 @@
   </section>
   <section class="image-section mt-5 p-5 d-flex align-items-center"
     style="background: url('/assets/images/hero/bottom.png') center/cover no-repeat; max-height: 50px; padding: 80px 0;">
-
     <!-- HERO content -->
-
     <div class="row">
       <div class="col-lg-6 text-white">
         <h2 class="fw-bold">
@@ -832,50 +971,38 @@
           We Build What Matters
         </h2>
 
-        <a href="#" class="btn btn-outline-light px-4 rounded-2">
-          <span>Contact Us</span>
-          <span class="ms-2">→</span>
-        </a>
       </div>
     </div>
-
   </section>
   <section class="contact-section p-5">
     <div class="row align-items-center g-4">
       <h2 class="text-white fw-semibold">Contact Us</h2>
       <p class="text-white">Connect with our team for expert guidance.</p>
-
       <!-- Left Form Column -->
       <div class="col-lg-6 col-md-6 ">
         <div class="contact-form p-1 ">
-
           <form>
             <!-- Name -->
             <div class="mb-4">
               <input type="text" class="form-control rounded-2" placeholder="Full Name">
             </div>
-
             <!-- Email -->
             <div class="mb-4">
               <input type="email" class="form-control rounded-2" placeholder="Email Address">
             </div>
-
             <!-- Phone -->
             <div class="mb-4">
               <input type="text" class="form-control rounded-2" placeholder="Phone Number">
             </div>
-
             <!-- Message -->
             <div class="mb-4">
               <textarea rows="5" class="form-control rounded-2" style="height: 100px !important;"
                 placeholder="Write your message"></textarea>
             </div>
             <!-- Center Button -->
-
-            <a href="#" class="btn btn-outline-light btn-sm px-4 py-2 text-white rounded-2">
+            <a href="#" class="btn btn-outline-light btn-sm px-4 py-2 rounded-2">
               <spa>Read More</span> →
             </a>
-
           </form>
         </div>
       </div>
@@ -885,7 +1012,6 @@
           <img src="/assets/images/hero/map.png" class="img-fluid " alt="Contact Image">
         </div>
       </div>
-
     </div>
   </section>
   <!-- Footer -->
@@ -1035,24 +1161,24 @@
       }
     });
   </script>
-<script>
-var swiper = new Swiper(".myTestimonialSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  loop: true,
-  centeredSlides: true,
-  speed: 3000, // smooth continuous speed
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1200: { slidesPerView: 3 }
-  }
-});
-</script>
+  <script>
+    var swiper = new Swiper(".myTestimonialSwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      loop: true,
+      centeredSlides: true,
+      speed: 3000, // smooth continuous speed
+      autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        0: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }
+      }
+    });
+  </script>
 </body>
 
 </html>
