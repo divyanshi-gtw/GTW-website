@@ -8,13 +8,16 @@
     <link rel="icon" type="image/svg+xml" href="/assets/images/hero/favicon.svg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+
+    </style>
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg topbar px-4 fixed-top">
         <div class="container-fluid d-flex align-items-center justify-content-between">
 
@@ -34,7 +37,7 @@
                 <ul class="navbar-nav gap-lg-4 gap-2">
 
                     <li class="nav-item">
-                        <a class="nav-link top-link text-white" href="/index.html">Home</a>
+                        <a class="nav-link top-link  text-white" href="#">Home</a>
                     </li>
 
                     <li class="nav-item">
@@ -43,7 +46,7 @@
 
                     <!-- SERVICES -->
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link top-link  text-white dropdown-toggle" href="#">Services</a>
+                        <a class="nav-link top-link text-white dropdown-toggle" href="#">Services</a>
                         <div class="dropdown-menu mega-menu shadow">
                             <div class="row">
                                 <div class="col-lg-3 col-md-6 mb-3">
@@ -131,7 +134,7 @@
 
                     <!-- INDUSTRIES -->
                     <li class="nav-item dropdown position-static">
-                        <a class="nav-link top-link text-white dropdown-toggle" href="#">Industries</a>
+                        <a class="nav-link top-link active text-primary dropdown-toggle" href="#">Industries</a>
                         <div class="dropdown-menu mega-menu shadow">
                             <!-- row 1 -->
                             <div class="row mb-3">
@@ -336,15 +339,14 @@
                     </li>
 
                     <li class="nav-item"><a class="nav-link top-link text-white"
-                            href="/protfolio/protfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active text-primary"
+                            href="/protfolio/protfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link top-link text-white"
                             href="/testnomial/testnomial.html">Testimonial</a></li>
-                    <li class="nav-item "><a class="nav-link top-link text-white" href="/blog/blog.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link top-link text-white" href="/blog/blog.html">Blogs</a></li>
 
                     <!-- Mobile Contact -->
                     <li class="nav-item d-lg-none mt-2">
-                        <a href="/contact/contact-us.html" class="btn btn-outline-primary  w-100">Contact Us</a>
+                        <a href="/contact/contact-us.html" class="btn btn-outline-primary w-100">Contact Us</a>
                     </li>
 
                 </ul>
@@ -352,257 +354,323 @@
 
             <!-- Desktop Contact -->
             <div class="d-none d-lg-flex ms-3">
-                <a href="/contact/contact-us.html" class="btn btn-outline-primary  rounded-2 px-4">Contact Us →</a>
+                <a href="/contact/contact-us.html" class="btn btn-outline-primary rounded-2 px-4">Contact Us →</a>
             </div>
 
         </div>
     </nav>
     <section class="hero-section">
-
         <!-- HERO content -->
-        <div class="hero-content  w-100 "
-            style="background: url('/assets/images/testnomail/testnomial-bg.png') center/cover no-repeat;">
+        <div class="hero-content d-flex align-items-center w-100 text-white">
+            <div class="container-fluid px-lg-5">
+                <div class="row align-items-center">
 
-            <!-- HERO TEXT -->
-            <div class="text-center py-5 text-white">
-                <h1 class="fw-bold ">Testnomials</h1>
-                <p class="fs-4">Partnerships Built on Performance and Reliability</p>
+                    <!-- Text Column -->
+                    <div class="col-lg-6 mb-4  mb-lg-0 text-lg-start text-center">
+                        <h2 class="fw-bold mb-4">Restaurants</h2>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptatem voluptates,
+                            fuga cumque ad dicta corporis ipsam laboriosam rerum blanditiis totam perspiciatis
+                            repellendus magni earum, accusantium quasi obcaecati iste maxime molestias ducimus in odio
+                            nostrum facere. Provident in quos temporibus esse voluptatem, blanditiis praesentium odit
+                            minus tempora incidunt accusamus vero, dolorem, dignissimos similique! Qui facere distinctio
+                            vel vero vitae, est recusandae earum eligendi itaque cum, aut rem non provident repudiandae!
+                        </p>
+
+                        <div>
+                            <a href="/blog/blog.html" class="btn btn-outline-light px-4 rounded-2">
+                                Get Consultant <span class="text-primary"> →</span>
+                            </a> <a href="/blog/blog.html" class="btn btn-outline-light px-4 rounded-2">
+                                View Case study
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="col-lg-6  text-center text-lg-end">
+                        <div class="image-card rounded shadow-lg overflow-hidden d-inline-block">
+                            <img src="/assets/images/industry/restaurant.png" class="img-fluid rounded"
+                                alt="Team at Work">
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
+
     </section>
-    <section class="bg-white rounded-5 p-5">
+    <section class=" bg-white text-dark p-5 rounded-5">
+        <h2 class="mb-3 fw-bold text-center">Our solution for <span class="text-primary">Restaurant</span></h2>
+        <p class="mb-4 fw-semibold text-center text-dark">We combine strategy, technology, and innovation to deliver
+            scalable eCommerce solutions. By <br> leveraging industry leading platforms and modern development practices
+        </p>
 
-        <div class="row g-4">
+        <!-- row 1 -->
+        <div class="row mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
 
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img1.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant1.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Restaurants</h5>
                     </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
 
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
+                    <!-- Bottom: Description Text -->
                     <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
+                        Innovative solutions for growing businesses in tech and services.
                     </p>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
 
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img2.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant1.png " alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Restaurants Technology</h5>
                     </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
 
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
+                    <!-- Bottom: Description Text -->
                     <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
+                        Innovative solutions for growing businesses in tech and services.
                     </p>
                 </div>
             </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
 
-            <div class="col-12 col-md-6 col-lg-4 my-5       ">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img3.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant2.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Digital Restaurant Solution</h5>
                     </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
 
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
+                    <!-- Bottom: Description Text -->
                     <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img1.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
-                    </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
-
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
-                    <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img2.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
-                    </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
-
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
-                    <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img3.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
-                    </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
-
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
-                    <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
-                    </p>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img1.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
-                    </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
-
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
-                    <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img2.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
-                    </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
-
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
-                    <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-4 my-5">
-                <div class="testimonial-card border border-1  rounded-4 p-4 position-relative" style="max-width:600px;">
-                    <div class="position-absolute" style="top:-45px; left:30px;">
-                        <img src="/assets/images/hero/client-img3.png" class="rounded-circle"
-                            style="width:75px; height:75px; object-fit:cover;" alt="user">
-                    </div>
-                    <div class="text-end text-warning fs-3 position-absolute" style="top:15px; right:20px;">
-                        ★★★★★
-                    </div>
-                    <p class="text-muted  my-5">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla veritatis, doloremque laudantium
-                        nemo
-                        perspiciatis nam rem beatae deserunt iusto est quibusdam, mollitia eaque! Harum, labore modi.
-                        Voluptate esse eveniet quisquam! </p>
-
-                    <h5 class="fw-bold mb-1">Roy Donaldson</h5>
-                    <p class="mb-0 small">
-                        <span class="text-muted">Project :</span>
-                        <span class="text-danger fw-semibold">Book Luxor</span>
+                        Innovative solutions for growing businesses in tech and services.
                     </p>
                 </div>
             </div>
 
         </div>
+        <!-- Row 2 -->
+        <div class="row mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
 
-    </section>
-    <section class="position-relative text-white p-5 m-4"
-        style="background: url('/assets/images/testnomail/testnomial-bottom.png') no-repeat center center; background-size: cover;">
-        <div class="row align-items-center">
-            <!-- Left Text -->
-            <div class="col-md-8">
-                <h3 class="fw-bold ">Want to know about us</h3>
-                <p>Get to know the team shaping innovative technology solutions.</p>
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant3.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Online Ordering System</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
             </div>
-            <!-- Right Button -->
-            <div class="col-md-4 text-md-end text-start mt-3 mt-md-0">
-                <a href="/contact/contact-us.html" class="btn btn-outline-light px-4 rounded-2">
-                    <span>Contact Us</span> <span>→</span>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant4.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Smart POS</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant5.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">AI in Restaurants</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant6.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Tech in Restaurants</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant7.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Cloud Kitchen Technology</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0  small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant8.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Restaurant Management</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5 bg-black text-light">
+        <div class="row g-5 align-items-start">
+
+            <!-- Left Column -->
+            <div class="col-lg-4">
+                <h2 class="fw-bold text-white">FAQ's</h2>
+                <h3 class="text-primary fw-bold mt-2">Have Questions?</h3>
+                <p class="fw-bold text-light">We’ve got answers.</p>
+                <p>
+                    Gupta Tech Web specializes in building secure, scalable, and
+                    performance-driven eCommerce websites designed to accelerate
+                    your business growth and maximize online success.
+                </p>
+                <a href="/contact/contact-us.html" class="btn btn-outline-light rounded-3 mt-3">
+                    Contact Us →
                 </a>
             </div>
+
+            <!-- Right Column (FAQ Accordion) -->
+            <div class="col-lg-8">
+                <h5 class="mb-3 ms-3 text-primary">Outsourcing & Resource Supply</h5>
+
+                <div class="accordion accordion-flush faq-dark" id="faqAccordion">
+
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading1">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What is your cancellation policy for site management?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                Our goal is to keep our clients happy and satisfied.
+                                If you wish to cancel your monthly plan, simply inform
+                                our team and we will assist you with the process.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading2">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq2">
+                                How does Gupta Tech Web handle security and support?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                We implement strong security protocols, regular updates,
+                                malware protection, and continuous technical support to
+                                ensure your website remains safe and high-performing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading3">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq3">
+                                How do you clarify privacy policies and terms?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                We clearly define privacy policies, terms & conditions,
+                                and user rights to ensure full transparency and compliance
+                                with data protection standards.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading4">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq4">
+                                I run a restaurant. Can you build a site for reservations and online orders?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                Absolutely! We build custom restaurant websites with
+                                reservation systems, online ordering, and seamless
+                                payment gateway integrations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading5">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Can I request a specific deployment location?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                Yes, we can customize hosting, deployment, and services
+                                based on your preferred location or regional requirements.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- Footer -->
     <footer class=" text-light p-5 ">
+
         <div class="row gy-4">
 
+            <!-- Logo and description -->
             <div class="col-12 col-md-3">
                 <div class="mb-3">
                     <img src="/assets/images/logo-gtw.png" alt="GTW Logo" class="img-fluid">
@@ -624,6 +692,7 @@
                 </div>
             </div>
 
+            <!-- Quick Links -->
             <div class="col-6 col-sm-4 col-md-2">
                 <h6 class="footer-title text-uppercase mb-3">Quick Links</h6>
                 <ul class="list-unstyled footer-links">
@@ -634,6 +703,7 @@
                 </ul>
             </div>
 
+            <!-- Services -->
             <div class="col-6 col-sm-4 col-md-2">
                 <h6 class="footer-title text-uppercase mb-3">Services</h6>
                 <ul class="list-unstyled footer-links">
@@ -644,6 +714,7 @@
                 </ul>
             </div>
 
+            <!-- Resources -->
             <div class="col-6 col-sm-4 col-md-2">
                 <h6 class="footer-title text-uppercase mb-3">Resources</h6>
                 <ul class="list-unstyled footer-links">
@@ -658,12 +729,14 @@
                     <li><a href="#" class="text-light text-decoration-none small d-block mb-1">App Store</a></li>
                 </ul>
             </div>
+
+            <!-- Contact -->
             <div class="col-12 col-md-3">
                 <h6 class="footer-title text-uppercase mb-3">Contact Us</h6>
                 <ul class="list-unstyled footer-contact small">
                     <li class="mb-2 d-flex align-items-start">
                         <img src="/assets/images/icon/location.png" alt="" class="me-2 mt-1" width="20">
-                        <span>Plot No. 367 Pv4 Scheme No. 54, Behind C21 Mall Indore - 452010 (M.P.)</span>
+                        <span>Plot No. 367 PU4 Scheme No. 54, Behind C21 Mall Indore - 452010 (M.P.)</span>
                     </li>
                     <li class="mb-2 d-flex align-items-center">
                         <img src="/assets/images/icon/mail.png" alt="" class="me-2" width="20">
@@ -676,64 +749,16 @@
                 </ul>
             </div>
         </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="/assets/js/swiper-custom.js"></script>
     <script src="/assets/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/flatpickr-custome.js"> </script>
     <script src="/assets/js/dropdown.js"></script>
-    <script>
-        const items = document.querySelectorAll(".workflow-left li");
-        const img = document.getElementById("workflowImg");
-        const text = document.getElementById("workflowText");
 
-        items.forEach(item => {
-
-            item.addEventListener("mouseenter", () => changeContent(item));
-
-            item.addEventListener("click", () => changeContent(item));
-        });
-
-        function changeContent(item) {
-            items.forEach(i => i.classList.remove("active"));
-            item.classList.add("active");
-
-            img.src = item.getAttribute("data-img");
-            text.textContent = item.getAttribute("data-text");
-        }
-    </script>
-    <script>
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.topbar');
-            const heroHeight = document.querySelector('.hero-section').offsetHeight;
-
-            if (window.scrollY > heroHeight - 80) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-    </script>
-    <script>
-        var swiper = new Swiper(".teamSwiper", {
-            slidesPerView: 4,
-            spaceBetween: 25,
-            loop: true,
-            autoplay: {
-                delay: 500,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                0: { slidesPerView: 1 },
-                576: { slidesPerView: 2 },
-                768: { slidesPerView: 3 },
-                992: { slidesPerView: 4 }
-            }
-        });
-    </script>
 </body>
 
 </html>

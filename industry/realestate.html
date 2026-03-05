@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="icon" type="image/svg+xml" href="/assets/images/hero/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg topbar px-4 fixed-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="/assets/images/logo-gtw.png" alt="logo">
+            </a>
+
+            <!-- Hamburger -->
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#topbarMenu">
+                ☰
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse justify-content-center" id="topbarMenu">
+                <ul class="navbar-nav gap-lg-4 gap-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link top-link  text-white" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link top-link text-white" href="/about/about.html">About Us</a>
+                    </li>
+
+                    <!-- SERVICES -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link top-link text-white dropdown-toggle" href="#">Services</a>
+                        <div class="dropdown-menu mega-menu shadow">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="p-3 stat-card rounded-3">
+                                        <h6 class="text-primary fw-bold mb-3">Mobile Development</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Flutter
+                                                    App Development</a>
+                                            </li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Android
+                                                    App Development</a>
+                                            </li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">iOS App
+                                                    Development</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">React
+                                                    Native</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Machine
+                                                    Learning</a></li>
+                                            <li><a class="text-decoration-none text-white" href="#">Java Development</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="p-3 stat-card rounded-3">
+                                        <h6 class="text-primary fw-bold mb-3">Website Development</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Laravel
+                                                    Development</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white"
+                                                    href="#">WordPress Development</a>
+                                            </li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Shopify
+                                                    Development</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Python
+                                                    Web Development</a>
+                                            </li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white"
+                                                    href="#">React.js Development</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">PHP
+                                                    Development</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">DOT NET
+                                                    Development</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">MERN
+                                                    Stack Development</a>
+                                            </li>
+                                            <li><a class="text-decoration-none text-white" href="#">Vue.js
+                                                    Development</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="p-3 stat-card rounded-3">
+                                        <h6 class="text-primary fw-bold mb-3">UI/UX Design</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Website
+                                                    Design</a></li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white"
+                                                    href="#">Application Design</a></li>
+                                            <li><a class="text-decoration-none text-white" href="#">Responsive
+                                                    Design</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 mb-3">
+                                    <div class="p-3 stat-card rounded-3">
+                                        <h6 class="text-primary fw-bold mb-3">Digital Marketing</h6>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">SEO</a>
+                                            </li>
+                                            <li class="mb-3"><a class="text-decoration-none text-white" href="#">Social
+                                                    Media Marketing</a>
+                                            </li>
+                                            <li><a class="text-decoration-none text-white" href="#">Pay Per Click</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- INDUSTRIES -->
+                    <li class="nav-item dropdown position-static">
+                        <a class="nav-link top-link active text-primary dropdown-toggle" href="#">Industries</a>
+            <div class="dropdown-menu mega-menu shadow">
+              <!-- row 1 -->
+              <div class="row mb-3">
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/healthcare.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img1.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Healthcare</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/restaurant.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img2.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Food & Restaurant</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/travel.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img3.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Travel</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/realestate.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img4.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Real Estate</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+              </div>
+              <!-- Row 2 -->
+              <div class="row mb-3">
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/supply-chain.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img5.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Supply Chain</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/social-media-platform.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img6.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Social Media Platform</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/fintech-application.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img7.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Fintech Applications</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/e-commerce.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img8.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">E-Commerce Solutions</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+              </div>
+              <!-- Row 3 -->
+              <div class="row">
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/retail.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img9.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Retails</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-3">
+                  <a href="/industry/tutor.html" class="text-decoration-none">
+                  <div class="stat-card p-3 text-start d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                      <img src="/assets/images/topbar/img10.png" alt="Startups" height="25" class="me-2">
+                      <h6 class="mb-0 text-white">Tutors</h6>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 text-light small">
+                      Innovative solutions for growing  businesses in tech and services.
+                    </p>
+                  </div></a>
+                </div>
+              </div>
+            </div>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link top-link text-white"
+                            href="/protfolio/protfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link top-link text-white"
+                            href="/testnomial/testnomial.html">Testimonial</a></li>
+                    <li class="nav-item"><a class="nav-link top-link text-white" href="/blog/blog.html">Blogs</a></li>
+
+                    <!-- Mobile Contact -->
+                    <li class="nav-item d-lg-none mt-2">
+                        <a href="/contact/contact-us.html" class="btn btn-outline-primary w-100">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- Desktop Contact -->
+            <div class="d-none d-lg-flex ms-3">
+                <a href="/contact/contact-us.html" class="btn btn-outline-primary rounded-2 px-4">Contact Us →</a>
+            </div>
+
+        </div>
+    </nav>
+    <section class="hero-section">
+        <!-- HERO content -->
+        <div class="hero-content d-flex align-items-center w-100 text-white">
+            <div class="container-fluid px-lg-5">
+                <div class="row align-items-center">
+
+                    <!-- Text Column -->
+                    <div class="col-lg-6 mb-4  mb-lg-0 text-lg-start text-center">
+                        <h2 class="fw-bold mb-4">Real Estate</h2>
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptatem voluptates,
+                            fuga cumque ad dicta corporis ipsam laboriosam rerum blanditiis totam perspiciatis
+                            repellendus magni earum, accusantium quasi obcaecati iste maxime molestias ducimus in odio
+                            nostrum facere. Provident in quos temporibus esse voluptatem, blanditiis praesentium odit
+                            minus tempora incidunt accusamus vero, dolorem, dignissimos similique! Qui facere distinctio
+                            vel vero vitae, est recusandae earum eligendi itaque cum, aut rem non provident repudiandae!
+                        </p>
+
+                        <div>
+                            <a href="/blog/blog.html" class="btn btn-outline-light px-4 rounded-2">
+                                Get Consultant <span class="text-primary"> →</span>
+                            </a> <a href="/blog/blog.html" class="btn btn-outline-light px-4 rounded-2">
+                                View Case study
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Image Column -->
+                    <div class="col-lg-6  text-center text-lg-end">
+                        <div class="image-card rounded shadow-lg overflow-hidden d-inline-block">
+                            <img src="/assets/images/industry/restaurant.png" class="img-fluid rounded"
+                                alt="Team at Work">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class=" bg-white text-dark p-5 rounded-5">
+        <h2 class="mb-3 fw-bold text-center">Our solution for <span class="text-primary">Real Estate</span></h2>
+        <p class="mb-4 fw-semibold text-center text-dark">We combine strategy, technology, and innovation to deliver
+            scalable eCommerce solutions. By <br> leveraging industry leading platforms and modern development practices
+        </p>
+
+        <!-- row 1 -->
+        <div class="row mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant1.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Restaurants</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant1.png " alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Restaurants Technology</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant2.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Digital Restaurant Solution</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Row 2 -->
+        <div class="row mb-3">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant3.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Online Ordering System</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant4.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Smart POS</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant5.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">AI in Restaurants</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant6.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Tech in Restaurants</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant7.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Cloud Kitchen Technology</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0  small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="p-3 text-start shadow-sm d-flex flex-column justify-content-between rounded-2">
+
+                    <!-- Top: Image + Heading -->
+                    <div class="d-flex align-items-center ">
+                        <img src="/assets/images/industry/restaurant8.png" alt="Startups" height="30" class="me-2">
+                        <h5 class="mb-0 fw-semibold text-primary">Restaurant Management</h5>
+                    </div>
+
+                    <!-- Bottom: Description Text -->
+                    <p class="mb-0 small">
+                        Innovative solutions for growing businesses in tech and services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-5 bg-black text-light">
+        <div class="row g-5 align-items-start">
+
+            <!-- Left Column -->
+            <div class="col-lg-4">
+                <h2 class="fw-bold text-white">FAQ's</h2>
+                <h3 class="text-primary fw-bold mt-2">Have Questions?</h3>
+                <p class="fw-bold text-light">We’ve got answers.</p>
+                <p>
+                    Gupta Tech Web specializes in building secure, scalable, and
+                    performance-driven eCommerce websites designed to accelerate
+                    your business growth and maximize online success.
+                </p>
+                <a href="/contact/contact-us.html" class="btn btn-outline-light rounded-3 mt-3">
+                    Contact Us →
+                </a>
+            </div>
+
+            <!-- Right Column (FAQ Accordion) -->
+            <div class="col-lg-8">
+                <h5 class="mb-3 ms-3 text-primary">Outsourcing & Resource Supply</h5>
+
+                <div class="accordion accordion-flush faq-dark" id="faqAccordion">
+
+                    <!-- FAQ Item 1 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading1">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What is your cancellation policy for site management?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                Our goal is to keep our clients happy and satisfied.
+                                If you wish to cancel your monthly plan, simply inform
+                                our team and we will assist you with the process.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading2">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq2">
+                                How does Gupta Tech Web handle security and support?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                We implement strong security protocols, regular updates,
+                                malware protection, and continuous technical support to
+                                ensure your website remains safe and high-performing.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading3">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq3">
+                                How do you clarify privacy policies and terms?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                We clearly define privacy policies, terms & conditions,
+                                and user rights to ensure full transparency and compliance
+                                with data protection standards.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading4">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq4">
+                                I run a restaurant. Can you build a site for reservations and online orders?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                Absolutely! We build custom restaurant websites with
+                                reservation systems, online ordering, and seamless
+                                payment gateway integrations.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="accordion-item bg-black border-0 mb-3 rounded-3">
+                        <h2 class="accordion-header" id="faqHeading5">
+                            <button class="accordion-button collapsed bg-black text-light fw-semibold " type="button"
+                                data-bs-toggle="collapse" data-bs-target="#faq5">
+                                Can I request a specific deployment location?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body text-light">
+                                Yes, we can customize hosting, deployment, and services
+                                based on your preferred location or regional requirements.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class=" text-light p-5 ">
+
+            <div class="row gy-4">
+
+                <!-- Logo and description -->
+                <div class="col-12 col-md-3">
+                    <div class="mb-3">
+                        <img src="/assets/images/logo-gtw.png" alt="GTW Logo" class="img-fluid">
+                    </div>
+                    <p class="footer-desc small">
+                        Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard.
+                    </p>
+                    <div class="d-flex align-items-center mt-2">
+                        <a href="#" class="text-light"><img src="/assets/images/icon/facebook.png" alt="Facebook"
+                                width="60" height="60"></a>
+                        <a href="#" class="text-light"><img src="/assets/images/icon/instagram.png" alt="Instagram"
+                                width="60" height="60"></a>
+                        <a href="#" class="text-light"><img src="/assets/images/icon/twitter.png" alt="Twitter"
+                                width="60" height="60"></a>
+                        <a href="#" class="text-light"><img src="/assets/images/icon/linkdin.png" alt="LinkedIn"
+                                width="60" height="60"></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <h6 class="footer-title text-uppercase mb-3">Quick Links</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Self-hosted</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">SaaS Hosting</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Platform</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Desktop App</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <h6 class="footer-title text-uppercase mb-3">Services</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Product</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Developers</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Public API</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Docker</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <h6 class="footer-title text-uppercase mb-3">Resources</h6>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Merch Store</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Open Startup</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Embed</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Developers</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Routing Forms</a>
+                        </li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">Workflows</a></li>
+                        <li><a href="#" class="text-light text-decoration-none small d-block mb-1">App Store</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-12 col-md-3">
+                    <h6 class="footer-title text-uppercase mb-3">Contact Us</h6>
+                    <ul class="list-unstyled footer-contact small">
+                        <li class="mb-2 d-flex align-items-start">
+                            <img src="/assets/images/icon/location.png" alt="" class="me-2 mt-1" width="20">
+                            <span>Plot No. 367 PU4 Scheme No. 54, Behind C21 Mall Indore - 452010 (M.P.)</span>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <img src="/assets/images/icon/mail.png" alt="" class="me-2" width="20">
+                            info@crazydigitalworlds.com
+                        </li>
+                        <li class="mb-2 d-flex align-items-center">
+                            <img src="/assets/images/icon/call.png" alt="" class="me-2" width="20">
+                            +91 9039 502 924
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ar.js"></script>
+    <script src="/assets/js/swiper-custom.js"></script>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/flatpickr-custome.js"> </script>
+    <script src="/assets/js/dropdown.js"></script>
+
+</body>
+
+</html>

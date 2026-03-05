@@ -480,3 +480,30 @@ body {
   display: flex;
   animation: scroll-left 10s linear infinite;
 }
+/* Custom Dark FAQ Accordion */
+.faq-dark .accordion-button {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.faq-dark .accordion-button:focus {
+    box-shadow: none;
+}
+
+.faq-dark .accordion-button::after {
+    filter: brightness(0) invert(1); /* White arrow */
+}
+
+.faq-dark .accordion-button:not(.collapsed) {
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.faq-dark .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.faq-dark .accordion-item {
+    background-color: #212529;
+    border: none;
+}
