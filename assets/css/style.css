@@ -1,10 +1,10 @@
 body {
   background-color: #1c1c1c;
-} 
+}
 .topbar {
   backdrop-filter: blur(8px);
-  background: rgba(0,0,0,0.6);
-  transition: .3s;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.3s;
 }
 
 .nav-link-topbar {
@@ -12,7 +12,7 @@ body {
   font-weight: 500;
 }
 .top-link:hover {
-  color: #B30D29 !important;
+  color: #b30d29 !important;
 }
 
 /* Mega Menu */
@@ -32,7 +32,9 @@ body {
 }
 
 /* Custom Arrow */
-.navbar .dropdown-toggle::after { display: none; }
+.navbar .dropdown-toggle::after {
+  display: none;
+}
 .navbar .dropdown-toggle {
   position: relative;
   padding-right: 20px;
@@ -45,26 +47,25 @@ body {
   transform: translateY(-50%);
   width: 12px;
   height: 12px;
-  background: url('/assets/images/arrow-down.png') no-repeat center/contain;
+  background: url("/assets/images/arrow-down.png") no-repeat center/contain;
 }
 
 /* Mobile Fix */
-@media (max-width:991px){
-  #topbarMenu{
-    max-height:80vh;
-    overflow-y:auto;
-    background:#000;
-    padding:20px;
+@media (max-width: 991px) {
+  #topbarMenu {
+    max-height: 80vh;
+    overflow-y: auto;
+    background: #000;
+    padding: 20px;
   }
 
-  .mega-menu{
-    position:static !important;
-    max-height:60vh;
-    overflow-y:auto;
-    margin-top:10px;
+  .mega-menu {
+    position: static !important;
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-top: 10px;
   }
 }
-
 
 /* Card Hover Effect */
 .service-card {
@@ -141,7 +142,8 @@ body {
 
 .team-card small {
   font-size: 13px;
-}.portfolio-section {
+}
+.portfolio-section {
   background: #0b0b0b;
 }
 
@@ -482,28 +484,158 @@ body {
 }
 /* Custom Dark FAQ Accordion */
 .faq-dark .accordion-button {
-    background-color: #212529;
-    color: #ffffff;
+  background-color: #212529;
+  color: #ffffff;
 }
 
 .faq-dark .accordion-button:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .faq-dark .accordion-button::after {
-    filter: brightness(0) invert(1); /* White arrow */
+  filter: brightness(0) invert(1); /* White arrow */
 }
 
 .faq-dark .accordion-button:not(.collapsed) {
-    background-color: #212529;
-    color: #ffffff;
+  background-color: #212529;
+  color: #ffffff;
 }
 
 .faq-dark .accordion-button:not(.collapsed)::after {
-    filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
 }
 
 .faq-dark .accordion-item {
-    background-color: #212529;
-    border: none;
+  background-color: #212529;
+  border: none;
+}
+:root {
+  --dashed-red: #c1272d;
+  --text-dark: #000000;
+}
+
+.process-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.process-header {
+  max-width: 900px;
+  margin: 0 auto 100px;
+  text-align: center;
+}
+
+.process-header span {
+  color: var(--dashed-red);
+}
+
+.process-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step-box {
+  position: relative;
+  z-index: 5;
+}
+
+.step-icon {
+  width: 70px; /* Thoda bada icon image jaisa */
+  height: 70px;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  object-fit: contain;
+}
+
+.step-title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.step-desc {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* SVG Connector Flow */
+.line-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  /* Zigzag logic: 2nd and 4th steps move down */
+  .row-zigzag > div:nth-child(even) {
+    margin-top: 180px;
+  }
+  .step-box {
+    text-align: left;
+  }
+}
+
+@media (max-width: 991px) {
+  .step-box {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .line-overlay {
+    display: none;
+  }
+}
+
+/* Background styling as per your image */
+.step-item {
+  position: relative;
+  z-index: 2;
+}
+
+.icon-box {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+/* Curve Positioning */
+.svg-arrow-container {
+  position: absolute;
+  top: -10px;
+  /* Isse adjust karke curve ko upar-neeche kar sakte hain */
+  right: -50%;
+  /* Agle icon tak le jane ke liye */
+  width: 100%;
+  /* Gap cover karne ke liye */
+  height: 60px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.svg-arrow-container svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Mobile par curves hide kar dein taaki layout kharab na ho */
+@media (max-width: 768px) {
+  .svg-arrow-container {
+    display: none;
+  }
+}
+
+.step-item h4 {
+  font-weight: 600;
+}
+
+.step-item p {
+  font-size: 14px;
+  color: #bbb;
 }
